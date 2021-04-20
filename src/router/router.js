@@ -1,10 +1,10 @@
 import VueRouter from "vue-router"
 
-import IndexPage from "../views/pages/index_page.vue"
-import AboutMePage from "../views/pages/about_me_page.vue"
-import DevelopmentPage from "../views/pages/development_page.vue"
-import ResearchPage from "../views/pages/research_page.vue"
-import NotFoundPage from "../views/pages/not_found_page.vue"
+import IndexPage from "../views/pages/IndexPage.vue"
+import AboutMePage from "../views/pages/AboutMePage.vue"
+import DevelopmentPage from "../views/pages/DevelopmentPage.vue"
+import ResearchPage from "../views/pages/ResearchPage.vue"
+import NotFoundPage from "../views/pages/NotFoundPage.vue"
 
 const router = new VueRouter({
   routes: [
