@@ -1,15 +1,20 @@
 <template>
-<div id="menu">
+<div id="menu" class="main-color">
   <the-menu-icon/>
   <the-menu-pull-down-list />
 </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #menu {
-  height: 100px;
-  width: 100px;
-  background-color: #ffaaff;
+  // menu
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: $menu-width;
+  // height: $menu-height;
+  color: $base-color-white;
+  background-color: $main-color;
 }
 </style>
 

@@ -1,19 +1,25 @@
 <template>
 <div id="header">
-  <h1>Header</h1>
+  <the-logo/>
+  <the-menu/>
 </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #header {
-  height: 100px;
+  height: 200px;
   width: 100%;
-  background-color: #ffaaaa;
+  background-color: $main-color;
 }
 </style>
 
 <script>
+import TheLogo from "../molecules/TheLogo"
+import TheMenu from "../molecules/TheMenu"
 export default {
-  name: "my-header"
+  name: "the-header",
+  components: {
+    TheLogo, TheMenu
+  }
 }
 </script>

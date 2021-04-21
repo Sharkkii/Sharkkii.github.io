@@ -1,19 +1,18 @@
 <template>
 <div id="footer">
-  <h1>Footer</h1>
 </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #footer {
-  height: 100px;
+  height: 200px;
   width: 100%;
-  background-color: #aaaaff;
+  background-color: $main-color;
 }
 </style>
 
 <script>
 export default {
-  name: "my-footer"
+  name: "the-footer"
 }
 </script>

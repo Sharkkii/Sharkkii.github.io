@@ -1,14 +1,19 @@
 <template>
-<div id="logo">
+<div id="logo" class="main-color">
   <the-logo-icon/>
 </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #logo {
-  height: 100px;
-  width: 100px;
-  background-color: #ffffaa;
+  // logo
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: $logo-width;
+  height: $logo-height;
+  color: $base-color-white;
+  background-color: $main-color;
 }
 </style>
 
