@@ -3,6 +3,9 @@ import VueRouter from "vue-router"
 import router from "./router/router.js"
 import App from "./App"
 
+// add SCSS
+require("./assets/css/index.scss")
+
 // add font-awesome icons
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faShip, faBars } from "@fortawesome/free-solid-svg-icons"

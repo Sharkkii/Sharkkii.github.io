@@ -1,0 +1,98 @@
+// colors
+
+/*
+- main
+    main(blue): #158BBA | #5FB3D4 | #B9DFEE
+
+- analogous
+    sub(indigo): #436FB4 | #7F9ED0 | #C7D5EC
+    sub(green): #13AA98 | #5ACABD | #B6EAE4
+
+- complementary
+    accent(orange): #DE612F | #EA9878 | #F7D4C6
+
+- complementary-analogous
+    accent(pink): #C63266 | #DB7599 | #EAA8BF
+    accent(yellow): #F7D020 | #FAE173 | #FDF3C6
+
+- achromatic
+    base(black) #020B10 | #041A22
+    base(white) #E3E3E3 | #FFFFFF
+*/
+
+// base-colors
+// NOTE: color-mn represents the saturation & brightness
+
+$black-01: #020B10; 
+$black-02: #041A22;
+$black: $black-01;
+
+$white-01: #FFFFFF;
+$white-02: #E3E3E3;
+$white: $white-01;
+
+$base-color: $black;
+$base-bg-color: $white;
+
+// main-colors
+
+$main-color-10: #B9DFEE;
+$main-color-20: #5FB3D4;
+$main-color-30: #158BBA;
+$main-color: $main-color-30;
+
+// sub-colors
+
+$sub-color-indigo-10: #C7D5EC;
+$sub-color-indigo-20: #7F9ED0;
+$sub-color-indigo-30: #436FB4;
+
+$sub-color-green-10: #B6EAE4;
+$sub-color-green-20: #5ACABD;
+$sub-color-green-30: #13AA98;
+
+$sub-color-10: $sub-color-indigo-10;
+$sub-color-20: $sub-color-indigo-20;
+$sub-color-30: $sub-color-indigo-30;
+$sub-color: $sub-color-30;
+
+// accent-colors
+
+$accent-color-orange-10: #F7D4C6;
+$accent-color-orange-20: #EA9878;
+$accent-color-orange-30: #DE612F;
+
+$accent-color-pink-10: #EAA8BF;
+$accent-color-pink-20: #DB7599;
+$accent-color-pink-30: #C63266;
+
+$accent-color-yellow-10: #FDF3C6;
+$accent-color-yellow-20: #FAE173;
+$accent-color-yellow-30: #F7D020;
+
+$accent-color-10: $accent-color-orange-10;
+$accent-color-20: $accent-color-orange-20;
+$accent-color-30: $accent-color-orange-30;
+$accent-color: $accent-color-30;
+
+
+// width & height
+
+$logo-width: 200px;
+$logo-height: 50px;
+
+$menu-width: 200px;
+$menu-height: 50px;
+
+// padding & margin
+
+$header-padding-horizontal: 20px;
+$header-padding-vertical: 20px;
+
+$main-padding-horizontal: $logo-width;
+$main-padding-vertical: 20px;
+
+$footer-padding-horizontal: 20px;
+$footer-padding-vertical: 20px;
+
+

@@ -9,7 +9,7 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "./public/dist"),
     watchContentBase: true
   },
   resolve: {
@@ -25,8 +25,28 @@ module.exports = {
         use: ["vue-style-loader", "css-loader"]
       },
       {
+        test: /\.scss$/,
+        use: [
+          "vue-style-loader",
+          "css-loader",
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            // global resources of SCSS
+            options: {
+              resources: "./src/assets/css/resources.scss"
+            }
+          }
+        ]
+      },
+      {
         test: /\.vue$/,
-        loader: "vue-loader"
+        loader: "vue-loader",
+        options: {
+          loaders: {
+            scss: "vue-style-loader!css-loader!sass-loader"
+          }
+        }
       }
       // {
       //   test: /\.js$/,
