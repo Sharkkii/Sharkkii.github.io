@@ -14,8 +14,6 @@
     text-decoration: none;
   }
 }
-
-
 </style>
 
 <script>
