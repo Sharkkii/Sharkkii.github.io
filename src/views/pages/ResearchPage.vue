@@ -11,7 +11,7 @@
 <script>
 import IndexTemplate from "../../components/templates/IndexTemplate"
 export default {
-  name: "root-page",
+  name: "research-page",
   components: {
     IndexTemplate
   }

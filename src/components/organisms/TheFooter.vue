@@ -2,7 +2,7 @@
 <div id="footer">
   <the-footer-container>
     <template v-slot:the-footer-container>
-      <slot name="the-footer">No Content</slot>
+      <!-- <the-copyright-icon/> -->
     </template>
   </the-footer-container>
 </div>
@@ -14,6 +14,7 @@
 </style>
 
 <script>
+// import TheCopyrightIcon from '../atoms/TheCopyrightIcon'
 import TheFooterContainer from "./TheFooterContainer"
 export default {
   name: "the-footer",

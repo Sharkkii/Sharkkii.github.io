@@ -6,6 +6,7 @@
 
 <style lang="scss">
 #footer-container {
+  position: relative;
   height: 200px;
   // width: 100%;
   padding: $footer-padding-vertical $footer-padding-horizontal;
