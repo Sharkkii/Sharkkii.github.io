@@ -7,16 +7,22 @@
 
 <style lang="scss">
 #logo-icon {
+
   width: $logo-width;
   height: $logo-height;
+
+  // background-color: $bg-color-03;
+
+  // color: $text-color-03;
+  font-size: 20px;
   line-height: $logo-height;
   text-align: center;
-  font-size: 20px;
+  
 }
 </style>
 
 <script>
 export default {
-  name: "the-logo-icon"
+  name: "logo-icon"
 }
 </script>

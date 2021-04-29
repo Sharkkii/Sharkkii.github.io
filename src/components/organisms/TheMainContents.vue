@@ -1,31 +1,30 @@
 <template>
-<div id="the-footer-container">
-  <slot name="the-footer-container">
+<div id="the-main-contents">
+  <slot name="the-main-contents">
     <span>No Content</span>
   </slot>
 </div>
 </template>
 
 <style lang="scss">
-#the-footer-container {
+#the-main-contents {
 
   position: relative;
   z-index: $layer-02;
 
   box-shadow: 0 0 10px 1px $gray-04;
   box-sizing: border-box;
-  height: 200px;
-  padding: $footer-padding-vertical $footer-padding-horizontal;
+  min-height: 500px;
+  padding: $main-contents-padding-vertical $main-contents-padding-horizontal;
   width: 100%;
 
-  background-color: $main-color;
-
+  background-color: $white;
+  
 }
 </style>
 
 <script>
-
 export default {
-  name: "the-footer-container"
+  name: "the-main-contents"
 }
 </script>

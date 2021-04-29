@@ -1,3 +1,8 @@
+// z-index
+$layer-01: 1;
+$layer-02: 2;
+$layer-03: 3;
+
 // colors
 
 /*
@@ -20,28 +25,46 @@
     base(white) #E3E3E3 | #FFFFFF
 */
 
-// base-colors
+// base-color
 // NOTE: color-mn represents the saturation & brightness
 
 $black-01: #020B10; 
 $black-02: #041A22;
 $black: $black-01;
 
+// TODO:
+$gray-00: #FFFFFF;
+$gray-01: #E3E3E3; // 
+$gray-02: #C6C6C6;
+$gray-03: #AAAAAA;
+$gray-04: #8E8E8E; // 
+$gray-05: #717171;
+$gray-06: #555555;
+$gray-07: #393939; //
+$gray-08: #1C1C1C;
+$gray-09: #000000;
+
 $white-01: #FFFFFF;
 $white-02: #E3E3E3;
 $white: $white-01;
 
 $base-color: $black;
-$base-bg-color: $white;
 
 // main-colors
 
-$main-color-10: #B9DFEE;
-$main-color-20: #5FB3D4;
-$main-color-30: #158BBA;
-$main-color: $main-color-30;
+$main-color-00: #FFFFFF;
+$main-color-10: #DAEEF6;
+$main-color-20: #B9DFEE; // 10
+$main-color-30: #99CFE5;
+$main-color-40: #7AC0DC;
+$main-color-50: #5FB3D4; // 20
+$main-color-60: #44A5CB;
+$main-color-70: #2B97C2;
+$main-color-80: #158BBA; // 30
+$main-color-90: #007FB1;
+$main-color: $main-color-80;
 
-// sub-colors
+// sub-color
 
 $sub-color-indigo-10: #C7D5EC;
 $sub-color-indigo-20: #7F9ED0;
@@ -56,7 +79,7 @@ $sub-color-20: $sub-color-indigo-20;
 $sub-color-30: $sub-color-indigo-30;
 $sub-color: $sub-color-30;
 
-// accent-colors
+// accent-color
 
 $accent-color-orange-10: #F7D4C6;
 $accent-color-orange-20: #EA9878;
@@ -75,11 +98,31 @@ $accent-color-20: $accent-color-orange-20;
 $accent-color-30: $accent-color-orange-30;
 $accent-color: $accent-color-30;
 
+// text
+
+$text-color-01: $black;
+$bg-color-01: $gray-01;
+
+$text-color-02: $main-color;
+$bg-color-02: $gray-01;
+
+$text-color-03: $white;
+$bg-color-03: $main-color;
+
+$text-color-04: $white;
+$bg-color-04: $main-color-10;
+
 
 // width & height
 
 $logo-width: 200px;
 $logo-height: 50px;
+
+$navigation-width: 100%;
+$navigation-height: 50px;
+
+$navigation-item-width: 200px;
+$navigation-item-height: $navigation-height;
 
 $menu-width: 200px;
 $menu-height: 50px;
@@ -92,7 +135,17 @@ $header-padding-vertical: 20px;
 $main-padding-horizontal: $logo-width;
 $main-padding-vertical: 20px;
 
+$main-contents-padding-horizontal: 20px;
+$main-contents-padding-vertical: 20px;
+
 $footer-padding-horizontal: 20px;
 $footer-padding-vertical: 20px;
 
+$header-margin-horizontal: 20px;
+$header-margin-vertical: 20px;
 
+$main-margin-horizontal: $logo-width;
+$main-margin-vertical: 20px;
+
+$footer-margin-horizontal: 20px;
+$footer-margin-vertical: 20px;

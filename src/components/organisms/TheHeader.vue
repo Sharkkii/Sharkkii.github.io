@@ -1,5 +1,5 @@
 <template>
-<div id="header">
+<div id="the-header">
   <the-header-container>
     <template v-slot:the-header-container>
       <the-navigation/>
@@ -9,8 +9,7 @@
 </template>
 
 <style lang="scss">
-#header {
-  
+#the-header {
 }
 </style>
 

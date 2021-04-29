@@ -1,31 +1,32 @@
 <template>
-<div id="navigation">
+<div id="the-navigation">
   <the-navigation-list/>
-  <!-- <the-logo/> -->
-  <!-- <the-menu/> -->
 </div>
 </template>
 
 <style lang="scss">
-#navigation {
+#the-navigation {
+
   position: fixed;
-  top: 0px;
   right: 0px;
-  width: $menu-width;
-  height: 50px;
+  top: 0px;
+  z-index: $layer-03;
+
+  box-shadow: 0 0 20px $gray-07;
+  box-sizing: border-box;
+  height: $navigation-height;
   width: 100%;
+
   background-color: $main-color;
+
 }
 </style>
 
 <script>
 import TheNavigationList from "../molecules/TheNavigationList"
-// import TheLogo from "../molecules/TheLogo"
-// import TheMenu from "../molecules/TheMenu"
 export default {
   name: "the-navigation",
   components: {
-    // TheLogo, TheMenu,
     TheNavigationList
   }
 }

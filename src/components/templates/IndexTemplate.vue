@@ -10,16 +10,19 @@
 </div>
 </template>
 
+<style lang="scss">
+#index-template {
+}
+</style>
+
 <script>
 import TheHeader from "../organisms/TheHeader"
 import TheMain from "../organisms/TheMain"
 import TheFooter from "../organisms/TheFooter"
-import TheLogo from "../molecules/TheLogo"
-import TheMenu from "../molecules/TheMenu"
 export default {
   name: "index-template",
   components: {
-    TheHeader, TheMain, TheFooter, TheLogo, TheMenu
+    TheHeader, TheMain, TheFooter
   }
 }
 </script>

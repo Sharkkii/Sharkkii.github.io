@@ -1,5 +1,5 @@
 <template>
-<div id="main">
+<div id="the-main">
   <the-main-container>
     <template v-slot:the-main-container>
       <slot name="the-main">No Content</slot>
@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss">
-#main {
+#the-main {
 }
 </style>
 

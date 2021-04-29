@@ -1,24 +1,39 @@
 <template>
-<div id="footer">
+<div id="the-footer">
   <the-footer-container>
     <template v-slot:the-footer-container>
-      <slot name="the-footer">No Content</slot>
+      <the-copyright/>
     </template>
   </the-footer-container>
 </div>
 </template>
 
 <style lang="scss">
-#footer {
+#the-footer {
+
+  #the-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 50px;
+    padding: 0 auto;
+    width: 100%;
+
+    line-height: 50px;
+    text-align: center;
+  }
+  
 }
 </style>
 
 <script>
+import TheCopyright from "../molecules/TheCopyright"
 import TheFooterContainer from "./TheFooterContainer"
 export default {
   name: "the-footer",
   components: {
-    TheFooterContainer
+    TheCopyright, TheFooterContainer
   }
 }
 </script>

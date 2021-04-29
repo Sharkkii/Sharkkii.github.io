@@ -5,12 +5,13 @@ import App from "./App"
 
 // add SCSS
 require("./assets/css/index.scss")
+require("./assets/css/common.scss")
 
 // add font-awesome icons
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faShip, faBars } from "@fortawesome/free-solid-svg-icons"
+import { faShip, faBars, faCopyright } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-library.add(faShip, faBars)
+library.add(faShip, faBars, faCopyright)
 
 // add font-awesome component to global space
 Vue.component("font-awesome-icon", FontAwesomeIcon)

@@ -1,53 +1,47 @@
 <template>
-<div id="navigation-list">
-  <div class="navigation-list-item">
-    <navigation-list-item>
+<div id="the-navigation-list">
+  
+  <div class="float-left">
+    <navigation-list-item v-bind:link="'/'">
       <template v-slot:navigation-list-item>
-        <the-logo/>
+        <logo/>
       </template>
     </navigation-list-item>
   </div>
-  <div class="float-right">
-    <div v-for="item in items" v-bind:key="item.link" class="navigation-list-item">
-      <navigation-list-item>
-        <template v-slot:navigation-list-item>
-          <v-router-link v-bind:link="item.link" v-bind:text="item.text"/>
-        </template>
-      </navigation-list-item>
-    </div>
+
+  <div v-for="item in items" v-bind:key="item.link" class="float-right">
+    <navigation-list-item v-bind:link="item.link">
+      <template v-slot:navigation-list-item>
+        <div>
+          {{ item.text }}
+        </div>
+      </template>
+    </navigation-list-item>
   </div>
 </div>
 </template>
 
 <style lang="scss">
-#navigation-list {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
+#the-navigation-list {
+
+  height: $navigation-height;
+  width: $navigation-width;
+
   font-size: 20px;
+  line-height: $navigation-height;
+  text-align: center;
 
-  .navigation-list-item {
-    float: left;
-    width: 200px;
-    height: 50px;
-  }
-}
-
-.float-right {
-  float: right;
 }
 </style>
 
 <script>
-import VAnchor from "../atoms/VAnchor"
-import VRouterLink from "../atoms/VRouterLink"
+import InternalLink from "../atoms/InternalLink"
 import NavigationListItem from "../atoms/NavigationListItem"
-import TheLogo from "./TheLogo"
+import Logo from "./Logo"
 export default {
   name: "the-navigation-list",
   components: {
-    VAnchor, VRouterLink, NavigationListItem, TheLogo
+    InternalLink, NavigationListItem, Logo
   },
   data: function() {
     return {
