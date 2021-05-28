@@ -1,19 +1,23 @@
 <template>
-<div id="menu-icon">
+<div id="the-menu-icon">
   <font-awesome-icon icon="bars"></font-awesome-icon>
   <span>MENU</span>
 </div>
 </template>
 
 <style lang="scss">
-#menu-icon {
+#the-menu-icon {
+  
   width: $menu-width;
   height: $menu-height;
+
+  background-color: $main-bg-color;
+
+  color: $main-color;
+  font-size: 20px;
   line-height: $menu-height;
   text-align: center;
-  font-size: 20px;
-  color: $white;
-  background-color: $main-color;
+
 }
 </style>
 

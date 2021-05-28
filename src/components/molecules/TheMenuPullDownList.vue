@@ -1,5 +1,5 @@
 <template>
-<div id="menu-pull-down-list">
+<div id="the-menu-pull-down-list">
   <div v-for="item in items" v-bind:key="item.link">
     <menu-pull-down-list-item>
       <template v-slot:menu-pull-down-list-item>
@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss">
-#menu-pull-down-list {
+#the-menu-pull-down-list {
   width: 200px;
   // height: 50px;
   line-height: 50px;
@@ -21,13 +21,11 @@
 </style>
 
 <script>
-import VAnchor from "../atoms/VAnchor"
-import VRouterLink from "../atoms/VRouterLink"
 import MenuPullDownListItem from "../atoms/MenuPullDownListItem"
 export default {
   name: "the-menu-pull-down-list",
   components: {
-    VAnchor, VRouterLink, MenuPullDownListItem
+    MenuPullDownListItem
   },
   data: function() {
     return {

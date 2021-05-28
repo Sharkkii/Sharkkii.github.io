@@ -1,19 +1,19 @@
 <template>
-<div id="menu">
+<div id="the-menu">
   <the-menu-icon/>
   <the-menu-pull-down-list />
 </div>
 </template>
 
 <style lang="scss">
-#menu {
+#the-menu {
   position: fixed;
   top: 0px;
   right: 0px;
   width: $menu-width;
   // height: $menu-height;
-  color: $white;
-  background-color: $main-color;
+  color: $text-color-03;
+  background-color: $bg-color-03;
 }
 </style>
 

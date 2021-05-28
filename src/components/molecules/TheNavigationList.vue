@@ -47,10 +47,10 @@ export default {
     return {
       "items": [
         // { link: "/", text: "TOP" },
+        { link: "/about-me", text: "About Me" },
         { link: "/development", text: "Development" },
         { link: "/research", text: "Research" },
         { link: "/study", text: "Study" },
-        { link: "/about-me", text: "About Me" },
       ]
     }
   }
