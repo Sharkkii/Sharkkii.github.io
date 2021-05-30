@@ -1,6 +1,6 @@
 <template>
 <div class="external-link">
-  <a v-bind:href="link">
+  <a v-bind:href="link" target="_blank" rel="noopener noreferrer">
     <slot name="link">
       <span>No Item</span>
     </slot>
@@ -11,6 +11,7 @@
 <style lang="scss">
 .external-link {
   a {
+    color: inherit;
     text-decoration: none;
   }
 }

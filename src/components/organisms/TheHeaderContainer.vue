@@ -10,13 +10,13 @@
   position: relative;
   z-index: $layer-02;
 
-  box-shadow: 0 0 10px 1px $gray-04;
+  // box-shadow: 0 0 10px 1px $gray-04;
   box-sizing: border-box;
-  height: 200px;
+  height: $header-height;
   padding: $header-padding-vertical $header-padding-horizontal;
-  width: 100%;
+  width: $header-width;
 
-  background-color: $bg-color-03;
+  background-color: $white;
   
 }
 </style>

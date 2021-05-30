@@ -27,7 +27,6 @@
   height: $navigation-height;
   width: $navigation-width;
 
-  font-size: 20px;
   line-height: $navigation-height;
   text-align: center;
 

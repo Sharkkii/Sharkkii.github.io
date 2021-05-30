@@ -1,5 +1,20 @@
+// @import "./resources.scss";
+
 * {
   margin: 0;
+}
+
+body {
+  font-family: Menlo;
+  font-size: $fontsize-medium;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
 }
 
 .float-right {
@@ -8,4 +23,40 @@
 
 .float-left {
   float: left;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.fontsize-small {
+  font-size: $fontsize-small;
+}
+
+.fontsize-medium {
+  font-size: $fontsize-medium;
+}
+
+.fontsize-large {
+  font-size: $fontsize-large;
+}
+
+.fontsize-xlarge {
+  font-size: $fontsize-xlarge;
+}
+
+.fontweight-light {
+  font-weight: $fontweight-light;
+}
+
+.fontweight-normal {
+  font-weight: $fontweight-normal;
+}
+
+.fontweight-bold {
+  font-weight: $fontweight-bold;
+}
+
+.color-main {
+  color: $main-color;
 }

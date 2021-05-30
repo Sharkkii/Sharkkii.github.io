@@ -11,6 +11,7 @@
 <style lang="scss">
 .internal-link {
   a {
+    color: inherit;
     text-decoration: none;
   }
 }

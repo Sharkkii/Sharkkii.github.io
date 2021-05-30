@@ -3,6 +3,7 @@
   <the-header-container>
     <template v-slot:the-header-container>
       <the-navigation/>
+      <slot name="the-header"></slot>
     </template>
   </the-header-container>
 </div>

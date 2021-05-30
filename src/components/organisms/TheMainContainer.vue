@@ -15,11 +15,11 @@
   z-index: 1;
 
   box-sizing: border-box;
-  min-height: 500px;
+  min-height: $main-min-height;
   padding: $main-padding-vertical $main-padding-horizontal;
-  width: 100%;
+  width: $main-width;
 
-  background-color: $main-color-10;
+  background-color: $white;
   
 }
 </style>

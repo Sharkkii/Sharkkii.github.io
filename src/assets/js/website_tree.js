@@ -3,18 +3,18 @@
 
 const website_tree = {
   "root": {
-    index: false,
+    index: true,
     "about-me": {
-      index: false
+      index: true
     },
     "development": {
-      index: false
+      index: true
     },
     "research": {
-      index: false
+      index: true
     },
     "study": {
-      index: false
+      index: true
     }
   }
 }

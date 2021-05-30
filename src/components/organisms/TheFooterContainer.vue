@@ -14,9 +14,9 @@
 
   box-shadow: 0 0 10px 1px $gray-04;
   box-sizing: border-box;
-  height: 200px;
+  height: $footer-height;
   padding: $footer-padding-vertical $footer-padding-horizontal;
-  width: 100%;
+  width: $footer-width;
 
   background-color: $main-color;
 

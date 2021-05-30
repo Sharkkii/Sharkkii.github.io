@@ -98,22 +98,16 @@ $accent-color-20: $accent-color-orange-20;
 $accent-color-30: $accent-color-orange-30;
 $accent-color: $accent-color-30;
 
-// text
-
-$text-color-01: $black;
-$bg-color-01: $gray-01;
-
-$text-color-02: $main-color;
-$bg-color-02: $gray-01;
-
-$text-color-03: $white;
-$bg-color-03: $main-color;
-
-$text-color-04: $white;
-$bg-color-04: $main-color-10;
-
-
 // width & height
+
+$header-width: 100%;
+$header-height: 100%; // 400px;
+
+$main-min-height: 500px;
+$main-width: 100%;
+
+$footer-width: 100%;
+$footer-height: 100%; // 50px;
 
 $logo-width: 200px;
 $logo-height: 50px;
@@ -126,6 +120,10 @@ $navigation-item-height: $navigation-height;
 
 $menu-width: 200px;
 $menu-height: 50px;
+
+$abstract-width: 100%;
+$abstract-image-width: 200px;
+$abstract-height: 200px;
 
 // padding & margin
 
@@ -149,3 +147,28 @@ $main-margin-vertical: 20px;
 
 $footer-margin-horizontal: 20px;
 $footer-margin-vertical: 20px;
+
+// text
+
+$text-color-01: $black;
+$bg-color-01: $gray-01;
+$text-color-02: $main-color;
+$bg-color-02: $gray-01;
+$text-color-03: $white;
+$bg-color-03: $main-color;
+$text-color-04: $white;
+$bg-color-04: $main-color-10;
+
+$fontweight-light: lighter;
+$fontweight-normal: normal;
+$fontweight-bold: bold;
+
+$fontsize-small: 8px;
+$fontsize-medium: 16px;
+$fontsize-large: 24px;
+$fontsize-xlarge: 32px;
+
+$lineheight-small: 16px;
+$lineheight-medium: 24px;
+$lineheight-large: 32px;
+$lineheight-xlarge: 40px;

@@ -15,7 +15,7 @@
   box-shadow: 0 0 20px $gray-07;
   box-sizing: border-box;
   height: $navigation-height;
-  width: 100%;
+  width: $navigation-width;
 
   background-color: $main-color;
 

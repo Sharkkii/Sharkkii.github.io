@@ -1,9 +1,13 @@
 <template>
 <div id="index-template">
-  <the-header/>
+  <the-header>
+    <template v-slot:the-header>
+      <slot name="the-header"></slot>
+    </template>
+  </the-header>
   <the-main>
     <template v-slot:the-main>
-      <slot name="index-template">No Content</slot>
+      <slot name="the-main">No Content</slot>
     </template>
   </the-main>
   <the-footer/>

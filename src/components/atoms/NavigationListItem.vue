@@ -17,6 +17,8 @@
   height: $navigation-item-height;
 
   background-color: $main-color-80;
+  transition-property: background-color;
+  transition-duration: 1s;
 
   color: $white;
   font-size: 20px;
@@ -24,7 +26,7 @@
   text-align: center;
 
   &:hover {
-    background-color: $main-color-50;
+    background-color: $main-color-20;
   }
   
   a {
