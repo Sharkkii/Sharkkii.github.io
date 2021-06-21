@@ -72,13 +72,13 @@
           </template>
         </external-link>
 
-        <!-- <external-link link="https://github.com/Sharkkii/Numer0n">
+        <external-link link="https://github.com/Sharkkii/Numer0n">
               <template v-slot:link>
             <div class="main-item Numer0n">
-              <p class="sub-headline">Numer0n: number guessing game</p>
+              <p class="sub-headline">Numer0n: Number-Guessing Game</p>
               <ul class="paragraph">
                 <li>
-                  <p>Game AI for Numer0n (number guessing game)</p>
+                  <p>Create Game AI for Numer0n</p>
                 </li>
                 <li>
                   <p>This is the first program I made!</p>
@@ -86,7 +86,7 @@
               </ul>
             </div>
           </template>
-        </external-link> -->
+        </external-link>
 
         <external-link link="https://github.com/Sharkkii/Othello">
           <template v-slot:link>

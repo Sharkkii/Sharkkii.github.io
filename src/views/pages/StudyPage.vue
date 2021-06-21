@@ -77,7 +77,7 @@
     .header-text {
       color: $main-color;
       font-size: 100px;
-      letter-spacing: 25px;
+      letter-spacing: 50px;
       line-height: 400px;
       text-align: center;
       text-indent: 25px;
