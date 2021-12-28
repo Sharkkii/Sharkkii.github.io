@@ -1,0 +1,12 @@
+// Mixin
+
+// Logo.vue
+@mixin LogoSize($width, $height, $font-size) {
+  #logo {
+    font-size: $font-size;
+    height: $height;
+    line-height: $height;
+    text-align: center;
+    width: $width;
+  }
+}
