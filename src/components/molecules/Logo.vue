@@ -1,21 +1,22 @@
 <template>
 <div id="logo">
-  <logo-icon/>
+  <font-awesome-icon icon="ship"></font-awesome-icon>
+  <span>SHARKKII</span>
 </div>
 </template>
 
 <style lang="scss">
 #logo {
+  // @include LogoSize(width, height, font-size);
 }
 </style>
 
 <script>
-import LogoIcon from "../atoms/LogoIcon"
 import InternalLink from "../atoms/InternalLink"
 export default {
   name: "logo",
   components: {
-    LogoIcon, InternalLink
+    InternalLink
   }
 }
 </script>
