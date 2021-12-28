@@ -1,17 +1,18 @@
 <template>
-<div id="the-left-column">
-  <slot name="left-column"></slot>
+<div id="the-side-bar">
 </div>
 </template>
 
 <style lang="scss">
-#the-left-column {
+#the-side-bar {
+  background-color: $main-color;
   height: 100%;
+  width: 10px;
 }
 </style>
 
 <script>
 export default {
-  name: "the-left-column"
+  name: "the-side-bar"
 }
 </script>

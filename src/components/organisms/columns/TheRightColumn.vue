@@ -1,5 +1,5 @@
 <template>
-<div class="the-right-column">
+<div id="the-right-column">
   <slot name="right-column"></slot>
 </div>
 </template>

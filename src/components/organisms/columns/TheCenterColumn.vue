@@ -1,5 +1,5 @@
 <template>
-<div class="the-center-column">
+<div id="the-center-column">
   <slot name="center-column"></slot>
 </div>
 </template>
