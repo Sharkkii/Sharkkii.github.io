@@ -1,6 +1,6 @@
 <template>
 <div class="entry-point">
-  <internal-link link="/">
+  <internal-link v-bind:link="link">
     <template v-slot:link>
       <div class="entry-point-container">
         <div class="entry-point-content">
@@ -44,6 +44,12 @@ export default {
   name: "entry-point",
   components: {
     InternalLink
+  },
+  props: {
+    "link": {
+      type: String,
+      required: true
+    }
   }
 }
 </script>

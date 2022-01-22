@@ -12,12 +12,12 @@
 }
 
 // EntryPoint.vue
-@mixin EntryPointSize($width, $height, $border-width, $border-width-hover) {
+@mixin EntryPointSize($class, $width, $height, $border-width, $border-width-hover) {
 
-  .entry-point {
+  #{$class} {
 
     height: $height;
-    margin: 10px;
+    // margin: 10px;
     padding: 0;
     width: $width;
 

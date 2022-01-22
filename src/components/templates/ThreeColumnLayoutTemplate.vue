@@ -6,7 +6,9 @@
     </template>
   </the-left-column>
   <the-center-column>
-    <template v-slot:center-column></template>
+    <template v-slot:center-column>
+      <slot name="center-column"></slot>
+    </template>
   </the-center-column>
   <the-right-column>
     <template v-slot:right-column>

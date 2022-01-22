@@ -7,7 +7,7 @@
 #the-side-bar {
   background-color: $main-color;
   height: 100%;
-  width: 10px;
+  width: 20px;
 }
 </style>
 
