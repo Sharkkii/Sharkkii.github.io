@@ -45,12 +45,10 @@ export default {
   data: function() {
     return {
       "items": [
-        // { link: "/", text: "TOP" },
-        { link: "/about-me", text: "About Me" },
-        { link: "/development", text: "Development" },
         { link: "/research", text: "Research" },
-        // { link: "/study", text: "Study" },
+        { link: "/development", text: "Development" },
         { link: "/career", text: "Career" },
+        { link: "/about-me", text: "About Me" },
       ]
     }
   }

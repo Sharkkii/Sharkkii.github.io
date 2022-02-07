@@ -15,6 +15,10 @@ body {
   display: block;
 }
 
+.display-flex {
+  display: flex;
+}
+
 .float-right {
   float: right;
 }
@@ -25,10 +29,6 @@ body {
 
 .float-clear {
   clear: both;
-}
-
-.display-flex {
-  display: flex;
 }
 
 .margin-left-auto {

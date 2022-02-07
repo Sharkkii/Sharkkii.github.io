@@ -1,14 +1,14 @@
 <template>
 <div id="the-navigation-list">
-  <div class="display-flex">
+  <div class="flex-container">
   
-    <navigation-list-item class="margin-right-auto" v-bind:link="'/'">
+    <navigation-list-item class="margin-right-auto flex-item" v-bind:link="'/'">
       <template v-slot:navigation-list-item>
         <logo/>
       </template>
     </navigation-list-item>
 
-    <navigation-list-item v-for="item in items" v-bind:key="item.link" v-bind:link="item.link">
+    <navigation-list-item class="flex-item" v-for="item in items" v-bind:key="item.link" v-bind:link="item.link">
       <template v-slot:navigation-list-item>
         <div>
           <p>{{ item.text }}</p>
@@ -26,6 +26,17 @@
   height: $navigation-height;
   width: $navigation-width;
 
+  .flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex-item {
+    height: 100%;
+    width: $navigation-item-width;
+  }
+
 }
 </style>
 
@@ -41,9 +52,8 @@ export default {
   data: function() {
     return {
       "items": [
-        // { link: "/", text: "TOP" },
-        { link: "/development", text: "Development" },
         { link: "/research", text: "Research" },
+        { link: "/development", text: "Development" },
         { link: "/career", text: "Career" },
         { link: "/about-me", text: "About Me" },
       ]
