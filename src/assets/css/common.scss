@@ -1,5 +1,3 @@
-// @import "./resources.scss";
-
 * {
   margin: 0;
 }
@@ -27,6 +25,18 @@ body {
 
 .float-clear {
   clear: both;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
 }
 
 .fontsize-small {

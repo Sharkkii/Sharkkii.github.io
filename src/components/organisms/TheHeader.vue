@@ -3,7 +3,9 @@
   <the-header-container>
     <template v-slot:the-header-container>
       <the-navigation/>
-      <slot name="the-header"></slot>
+      <div id="header-content">
+        <slot name="the-header"></slot>
+      </div>
     </template>
   </the-header-container>
 </div>
@@ -11,6 +13,9 @@
 
 <style lang="scss">
 #the-header {
+  #header-content {
+    margin-top: calc(#{$navigation-height} + 5px);
+  }
 }
 </style>
 

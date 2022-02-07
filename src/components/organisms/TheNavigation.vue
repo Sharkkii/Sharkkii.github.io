@@ -8,7 +8,7 @@
 #the-navigation {
 
   position: fixed;
-  right: 0px;
+  left: 0px;
   top: 0px;
   z-index: $layer-03;
 

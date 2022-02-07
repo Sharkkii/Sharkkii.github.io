@@ -100,25 +100,25 @@ $accent-color: $accent-color-30;
 
 // width & height
 
-$header-width: 100%;
 $header-height: 100%; // 400px;
+$header-width: 100%;
 
 $main-min-height: 500px;
 $main-width: 100%;
 
+$footer-height: 20vh;
 $footer-width: 100%;
-$footer-height: 100%; // 50px;
 
-$logo-width: 200px;
-$logo-height: 50px;
-
+$navigation-height: 10vh;
 $navigation-width: 100%;
-$navigation-height: 50px;
-$navigation-item-width: 200px;
+$navigation-item-width: 15vw;
 $navigation-item-height: $navigation-height;
 
-$side-navigation-width: 400px;
+$logo-height: 50px;
+$logo-width: 200px;
+
 $side-navigation-height: 100px;
+$side-navigation-width: 400px;
 $side-navigation-item-width: $side-navigation-width;
 $side-navigation-item-height: 50px;
 
@@ -167,12 +167,12 @@ $fontweight-light: lighter;
 $fontweight-normal: normal;
 $fontweight-bold: bold;
 
-$fontsize-small: 8px;
-$fontsize-medium: 16px;
-$fontsize-large: 24px;
-$fontsize-xlarge: 32px;
+$fontsize-small: clamp(0.5vw, 0.5vw, 8px);
+$fontsize-medium: clamp(8px, 1vw, 16px);
+$fontsize-large: clamp(16px, 2vw, 24px);
+$fontsize-xlarge: clamp(4vw, 4vw, 32px);
 
-$lineheight-small: 16px;
-$lineheight-medium: 24px;
-$lineheight-large: 32px;
-$lineheight-xlarge: 40px;
+$lineheight-small: calc(#{$fontsize-small} * 1.5);
+$lineheight-medium: calc(#{$fontsize-medium} * 1.5);
+$lineheight-large: calc(#{$fontsize-large} * 1.5);
+$lineheight-xlarge: calc(#{$fontsize-xlarge} * 1.5);

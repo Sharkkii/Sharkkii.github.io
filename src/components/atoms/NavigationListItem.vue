@@ -10,7 +10,7 @@
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .navigation-list-item {
   
   width: $navigation-item-width;
@@ -21,7 +21,7 @@
   transition-duration: 1s;
 
   color: $white;
-  font-size: 20px;
+  font-size: $fontsize-large;
   line-height: $navigation-item-height;
   text-align: center;
 
