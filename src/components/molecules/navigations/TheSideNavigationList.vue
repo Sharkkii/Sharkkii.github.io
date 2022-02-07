@@ -49,7 +49,8 @@ export default {
         { link: "/about-me", text: "About Me" },
         { link: "/development", text: "Development" },
         { link: "/research", text: "Research" },
-        { link: "/study", text: "Study" },
+        // { link: "/study", text: "Study" },
+        { link: "/career", text: "Career" },
       ]
     }
   }
