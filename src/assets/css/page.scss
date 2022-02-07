@@ -1,0 +1,61 @@
+.page {
+
+  .header-item {
+
+    display: flex;
+    justify-content: center;
+
+    border-top: solid 2px $main-color;
+    border-bottom: solid 2px $main-color;
+    box-sizing: border-box;
+    height: 400px;
+    margin: 0 auto;
+    width: 80vw;
+
+    .header-text {
+
+      height: 100%;
+      width: 60vw;
+      color: $main-color;
+      font-size: 100px;
+      line-height: 400px;
+
+    }
+
+  }
+
+  .main-item {
+
+    border-left: solid 20px $main-color;
+    border-right: solid 1px $main-color;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding: 20px;
+
+    .headline {
+      color: $main-color;
+      font-size: $fontsize-xlarge;
+      font-weight: $fontweight-bold;
+      line-height: $lineheight-xlarge;
+    }
+
+    .sub-headline {
+      color: $main-color;
+      font-size: $fontsize-large;
+      font-weight: $fontweight-bold;
+      line-height: $lineheight-large;
+    }
+
+    .paragraph {
+      font-size: $fontsize-medium;
+      font-weight: $fontweight-normal;
+      line-height: $lineheight-medium;
+    }
+
+  }
+
+  .footer-item {
+
+  }
+
+}
