@@ -31,7 +31,7 @@
 
       &:hover {
         border-width: $border-width-hover;
-        padding: $border-width - $border-width-hover;
+        padding: calc(#{$border-width} - #{$border-width-hover});
       }
 
     }
@@ -39,9 +39,9 @@
     .entry-point-content {
       
       box-sizing: border-box;
-      height: $height - 2 * $border-width;
+      height: calc(#{$height} - 2 * #{$border-width});
       padding: 10px;
-      width: $width - 2 * $border-width;
+      width: calc(#{$width} - 2 * #{$border-width});
 
     }
 

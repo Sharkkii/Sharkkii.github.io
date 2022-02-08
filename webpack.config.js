@@ -36,7 +36,12 @@ module.exports = {
             loader: "sass-resources-loader",
             // global resources of SCSS
             options: {
-              resources: "./src/assets/css/resources.scss"
+              resources: [
+                "./src/assets/css/resources.scss",
+                "./src/assets/css/default.scss",
+                "./src/assets/css/mixin.scss",
+                "./src/assets/css/page.scss"
+              ]
             }
           }
         ]
