@@ -1,31 +1,45 @@
 <template>
 <div id="the-side-navigation-list">
   
-  <div>
-    <side-navigation-list-item v-bind:link="'/'">
+  <div class="flex-container">
+
+    <side-navigation-list-item class="flex-item" v-bind:link="'/'">
       <template v-slot:side-navigation-list-item>
         <logo/>
       </template>
     </side-navigation-list-item>
-  </div>
 
-  <div v-for="item in items" v-bind:key="item.link">
-    <side-navigation-list-item v-bind:link="item.link">
+    <side-navigation-list-item class="flex-item" v-for="item in items" v-bind:key="item.link" v-bind:link="item.link">
       <template v-slot:side-navigation-list-item>
         <div class="item">
           {{ item.text }}
         </div>
       </template>
     </side-navigation-list-item>
+
   </div>
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #the-side-navigation-list {
-  @include LogoSize($width:400px, $height:100px, $font-size:40px);
+  $logo-height: $side-navigation-item-height;
+  $logo-width: $side-navigation-item-width;
+  @include LogoSize($width:$logo-width, $height:$logo-height, $font-size:$fontsize-xlarge);
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .flex-item {
+    height: $side-navigation-item-height;
+    width: $side-navigation-item-width;
+  }
+
   .item {
-    font-size: 20px;
+    font-size: $fontsize-large;
     height: $side-navigation-item-height;
     line-height: $side-navigation-item-height;
     width: $side-navigation-item-width;
