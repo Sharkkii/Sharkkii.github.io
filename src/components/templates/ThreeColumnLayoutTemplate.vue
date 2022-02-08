@@ -1,42 +1,51 @@
 <template>
 <div id="three-column-layout-template">
-  <the-left-column>
-    <template v-slot:left-column>
-      <the-side-navigation-bar/>
-    </template>
-  </the-left-column>
-  <the-center-column>
-    <template v-slot:center-column>
-      <slot name="center-column"></slot>
-    </template>
-  </the-center-column>
-  <the-right-column>
-    <template v-slot:right-column>
-      <the-side-bar/>
-    </template>
-  </the-right-column>
+  <div class="flex-container">
+    <the-left-column class="flex-item">
+      <template v-slot:left-column>
+        <the-side-navigation-bar/>
+      </template>
+    </the-left-column>
+    <the-center-column class="flex-item">
+      <template v-slot:center-column>
+        <slot name="center-column"></slot>
+      </template>
+    </the-center-column>
+    <the-right-column class="flex-item">
+      <template v-slot:right-column>
+        <the-side-bar/>
+      </template>
+    </the-right-column>
+  </div>
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #three-column-layout-template {
+
+  height: $page-height;
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-item {
+  }
 
   #the-left-column {
 
-    position: fixed;
-    top: 0; left: 0;
+    #the-side-navigation-bar {
+      position: fixed;
+      top: 0; left: 0;
+    }
 
   }
 
   #the-center-column {
-    
   }
 
   #the-right-column {
-
-    position: fixed;
-    top: 0; right: 0;
-
   }
 
 }

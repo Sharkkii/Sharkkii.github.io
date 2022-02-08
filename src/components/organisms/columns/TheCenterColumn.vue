@@ -7,8 +7,6 @@
 <style lang="scss">
 #the-center-column {
   height: 100%;
-  margin-left: 400px;
-  margin-right: 10px;
 }
 </style>
 

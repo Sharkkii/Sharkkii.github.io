@@ -4,9 +4,10 @@
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #the-left-column {
   height: 100%;
+  width: 25vw;
 }
 </style>
 
