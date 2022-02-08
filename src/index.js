@@ -9,9 +9,9 @@ require("./assets/css/common.scss")
 
 // add font-awesome icons
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook } from "@fortawesome/free-solid-svg-icons"
+import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-library.add(faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook)
+library.add(faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner)
 
 // add font-awesome component to global space
 Vue.component("font-awesome-icon", FontAwesomeIcon)

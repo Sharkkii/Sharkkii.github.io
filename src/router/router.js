@@ -1,27 +1,17 @@
 import VueRouter from "vue-router"
 
-import RootPage from "../views/pages/RootPage"
+import IndexPage from "../views/pages/production/index/IndexPage.vue"
 import AboutMePage from "../views/pages/AboutMePage"
 import DevelopmentPage from "../views/pages/DevelopmentPage"
 import ResearchPage from "../views/pages/ResearchPage"
+import CareerPage from "../views/pages/CareerPage"
 import StudyPage from "../views/pages/StudyPage"
 import NotFoundPage from "../views/pages/NotFoundPage"
-import UnderConstructionPage from "../views/pages/UnderConstructionPage"
-
-import { add_alias } from "../assets/js/website_tree"
 
 const routes = [
   {
-    path: "/under-construction",
-    component: UnderConstructionPage
-  },
-  {
-    path: "/not-found",
-    component: NotFoundPage
-  },
-  {
     path: "/",
-    component: RootPage
+    component: IndexPage
   },
   {
     path: "/about-me",
@@ -36,16 +26,22 @@ const routes = [
     component: ResearchPage
   },
   {
+    path: "/career",
+    component: CareerPage
+  },
+  {
     path: "/study",
     component: StudyPage
+  },
+  {
+    path: "/not-found",
+    component: NotFoundPage
   },
   {
     path: "*",
     redirect: "/not-found"
   }
 ]
-
-add_alias(routes)
 
 const router = new VueRouter({
   routes: routes
