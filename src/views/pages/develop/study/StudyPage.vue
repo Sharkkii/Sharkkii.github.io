@@ -123,8 +123,8 @@
 </style>
 
 <script>
-import IndexTemplate from "../../components/templates/IndexTemplate"
-import ExternalLink from "../../components/atoms/ExternalLink"
+import IndexTemplate from "../../../../components/templates/IndexTemplate"
+import ExternalLink from "../../../../components/atoms/ExternalLink"
 export default {
   name: "study-page",
   components: {

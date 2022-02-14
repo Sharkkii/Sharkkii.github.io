@@ -146,9 +146,9 @@
 </style>
 
 <script>
-import IndexTemplate from "../../components/templates/IndexTemplate"
-import ExternalLink from "../../components/atoms/ExternalLink"
-import JustifiedText from "../../components/atoms/JustifiedText.vue"
+import IndexTemplate from "../../../../components/templates/IndexTemplate"
+import ExternalLink from "../../../../components/atoms/ExternalLink"
+import JustifiedText from "../../../../components/atoms/JustifiedText.vue"
 export default {
   name: "about-me-page",
   components: {

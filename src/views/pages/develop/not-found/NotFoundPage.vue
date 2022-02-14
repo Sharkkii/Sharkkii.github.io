@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import IndexTemplate from "../../components/templates/IndexTemplate"
+import IndexTemplate from "../../../../components/templates/IndexTemplate"
 export default {
   name: "not-found-page",
   components: {

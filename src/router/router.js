@@ -1,12 +1,12 @@
 import VueRouter from "vue-router"
 
 import IndexPage from "../views/pages/production/index/IndexPage.vue"
-import AboutMePage from "../views/pages/AboutMePage"
-import DevelopmentPage from "../views/pages/DevelopmentPage"
-import ResearchPage from "../views/pages/ResearchPage"
-import CareerPage from "../views/pages/CareerPage"
-import StudyPage from "../views/pages/StudyPage"
-import NotFoundPage from "../views/pages/NotFoundPage"
+import AboutMePage from "../views/pages/production/about-me/AboutMePage"
+import DevelopmentPage from "../views/pages/production/development/DevelopmentPage"
+import ResearchPage from "../views/pages/production/research/ResearchPage"
+import CareerPage from "../views/pages/production/career/CareerPage"
+import StudyPage from "../views/pages/develop/study/StudyPage"
+import NotFoundPage from "../views/pages/develop/not-found/NotFoundPage"
 
 const routes = [
   {
