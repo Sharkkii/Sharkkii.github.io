@@ -15,13 +15,13 @@
       <template v-slot:the-main>
         <div>
           <div class="main-item name">
-            <p class="sub-headline">Name</p>
+            <p class="headline">Name</p>
             <div class="paragraph">
               <p>Toshiki Kodera</p>
             </div>
           </div>
           <div class="main-item affiliation">
-            <p class="sub-headline">Affiliation</p>
+            <p class="headline">Affiliation</p>
             <ul class="paragraph">
               <li>
                 <p>1st-year Master Student</p>
@@ -45,7 +45,7 @@
             </ul>
           </div>
           <div class="main-item educational-history">
-            <p class="sub-headline">Educational History</p>
+            <p class="headline">Educational History</p>
             <ul class="paragraph">
               <li>
                 <p>April 2021 - <span class="fontweight-bold">present</span></p>
@@ -62,7 +62,7 @@
             </ul>
           </div>
           <div class="main-item professional-history">
-            <p class="sub-headline">Professioanl History</p>
+            <p class="headline">Professioanl History</p>
             <ul class="paragraph">
               <li>
                 <p>April 2020 - <span class="fontweight-bold">present</span></p>
@@ -118,13 +118,13 @@
             </ul>
           </div>
           <!-- <div class="skills">
-            <p class="sub-headline">Skills</p>
+            <p class="headline">Skills</p>
             <ul>
               <li></li>
             </ul>
           </div> -->
           <div class="main-item github">
-            <p class="sub-headline">GitHub Account</p>
+            <p class="headline">GitHub Account</p>
             <p class="paragraph">
               <external-link link="https://github.com/Sharkkii" class="display-inline color-main">
                 <template v-slot:link>

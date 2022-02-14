@@ -13,14 +13,11 @@
 
       <template v-slot:the-main>
         <div>
-          <p class="headline">
-            Products
-          </p>
 
           <external-link link="https://github.com/Sharkkii/shaRL">
             <template v-slot:link>
               <div class="main-item shaRL">
-                <p class="sub-headline">shaRL: Reinforcement Learning Framework</p>
+                <p class="headline">shaRL: Reinforcement Learning Framework</p>
                 <ul class="paragraph">
                   <li>
                     <p>Try to make RL programs easy to write; RL by building blocks</p>
@@ -33,7 +30,7 @@
           <external-link link="https://github.com/Sharkkii/shaDL">
             <template v-slot:link>
               <div class="main-item shaDL">
-                <p class="sub-headline">shaDL: Deep Learning Framework</p>
+                <p class="headline">shaDL: Deep Learning Framework</p>
                 <ul class="paragraph">
                   <li>
                     <p>Try to make DL programs easy to write; DL by building blocks</p>
@@ -49,7 +46,7 @@
           <external-link link="https://github.com/Sharkkii/Enshu3">
             <template v-slot:link>
               <div class="main-item Enshu3">
-                <p class="sub-headline">Enshu3: 1-month Research Projects</p>
+                <p class="headline">Enshu3: 1-month Research Projects</p>
                 <ul class="paragraph">
                   <li>
                     <p>Enshu3 is a course of the Dept. of Information Science, UT</p>
@@ -76,7 +73,7 @@
           <external-link link="https://github.com/Sharkkii/Numer0n">
                 <template v-slot:link>
               <div class="main-item Numer0n">
-                <p class="sub-headline">Numer0n: Number-Guessing Game</p>
+                <p class="headline">Numer0n: Number-Guessing Game</p>
                 <ul class="paragraph">
                   <li>
                     <p>Create Game AI for Numer0n</p>
@@ -92,7 +89,7 @@
           <external-link link="https://github.com/Sharkkii/Othello">
             <template v-slot:link>
               <div class="main-item Othello">
-                <p class="sub-headline">Othello: Othello Game Written by Python</p>
+                <p class="headline">Othello: Othello Game Written by Python</p>
                 <!-- <ul class="paragraph"></ul> -->
               </div>
             </template>
@@ -101,7 +98,7 @@
           <external-link link="https://github.com/Sharkkii/Archive">
             <template v-slot:link>
               <div class="main-item Archive">
-                <p class="sub-headline">Archive: A Collection of Algorithms</p>
+                <p class="headline">Archive: A Collection of Algorithms</p>
                 <!-- <ul class="paragraph"></ul> -->
               </div>
             </template>
@@ -122,7 +119,7 @@
 
     color: $main-color;
 
-    .sub-headline {
+    .headline {
       color: inherit;
     }
 

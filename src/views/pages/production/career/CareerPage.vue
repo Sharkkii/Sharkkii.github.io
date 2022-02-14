@@ -14,13 +14,10 @@
 
       <template v-slot:the-main>
         <div>
-          <p class="headline">
-            Professional Experience
-          </p>
 
           <div class="main-item PFN">
 
-            <p class="sub-headline">Summer Internship 2021 @ Preferred Networks (PFN)</p>
+            <p class="headline">Summer Internship 2021 @ Preferred Networks (PFN)</p>
             <ul class="paragraph">
               <li>
                 <p>
@@ -73,7 +70,7 @@
 
           <div class="main-item PFN">
 
-            <p class="sub-headline">Part-time Employee @ Preferred Networks (PFN)</p>
+            <p class="headline">Part-time Employee @ Preferred Networks (PFN)</p>
             <ul class="paragraph">
               <li>
                 <p>
@@ -95,7 +92,7 @@
           
           <div class="main-item MatsuoLab">
 
-            <p class="sub-headline">Lecturer of Global Consumer Intelligence (GCI) @ Matsuo Lab.</p>
+            <p class="headline">Lecturer of Global Consumer Intelligence (GCI) @ Matsuo Lab.</p>
             <ul class="paragraph">
               <li>
                 <p>

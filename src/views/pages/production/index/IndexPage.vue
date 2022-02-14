@@ -11,7 +11,7 @@
               <img v-bind:src="SharkkiiPng" />
             </div>
             <div class="flex-item text">
-              <div class="sub-headline">
+              <div class="headline">
                 <p>ABOUT ME</p>
               </div>
               <div class="paragraph">
@@ -33,7 +33,7 @@
               <font-awesome-icon icon="graduation-cap"></font-awesome-icon>
             </div>
             <div class="flex-item text">
-              <p class="sub-headline">RESEARCH</p>
+              <p class="headline">RESEARCH</p>
               <div class="paragraph">
                 <p>Reinforcement Learning</p>
                 <ul>
@@ -54,7 +54,7 @@
               <font-awesome-icon icon="laptop-code"></font-awesome-icon>
             </div>
             <div class="flex-item text">
-              <p class="sub-headline">DEVELOPMENT</p>
+              <p class="headline">DEVELOPMENT</p>
               <div class="paragraph">
                 <ul>
                   <li><p>shaRL: Reinforcement Learning Framework</p></li>
@@ -76,7 +76,7 @@
               <font-awesome-icon icon="briefcase"></font-awesome-icon>
             </div>
             <div class="flex-item text">
-              <p class="sub-headline">CAREER</p>
+              <p class="headline">CAREER</p>
               <div class="paragraph">
                 <ul>
                   <li><p>Summer-Internship/Part-Time-Employee @ PFN</p></li>
@@ -96,7 +96,7 @@
               <font-awesome-icon icon="book"></font-awesome-icon>
             </div>
             <div class="flex-item text">
-              <p class="sub-headline">STUDY</p>
+              <p class="headline">STUDY</p>
               <ul class="paragraph">
                 <li><p>Tech Blog</p></li>
               </ul>
@@ -113,7 +113,7 @@
               <font-awesome-icon icon="spinner"></font-awesome-icon>
             </div>
             <div class="flex-item text">
-              <p class="sub-headline">UNDER CONSTRUCTION...</p>
+              <p class="headline">UNDER CONSTRUCTION...</p>
             </div>
           </div>
         </template>
@@ -194,7 +194,7 @@ $text-width: 27vw;
     
   }
 
-  .sub-headline {
+  .headline {
     font-size: $fontsize-large;
     font-weight: $fontweight-bold;
     line-height: $lineheight-large;

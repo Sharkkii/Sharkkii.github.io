@@ -14,12 +14,9 @@
 
       <template v-slot:the-main>
         <div>
-          <p class="headline">
-            Research Interest
-          </p>
 
           <div class="main-item RL">
-            <p class="sub-headline">Reinforcement Learning</p>
+            <p class="headline">Reinforcement Learning</p>
             <ul class="paragraph">
               <li>
                 <p>Control as Inference</p>
@@ -34,7 +31,7 @@
             </ul>
           </div>
           <div class="main-item DL">
-            <p class="sub-headline">Deep Learning</p>
+            <p class="headline">Deep Learning</p>
             <ul class="paragraph">
               <li>
                 <p>Generative Model</p>
