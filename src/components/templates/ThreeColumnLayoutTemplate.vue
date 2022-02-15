@@ -1,22 +1,26 @@
 <template>
 <div id="three-column-layout-template">
-  <div class="flex-container">
-    <the-left-column class="flex-item">
-      <template v-slot:left-column>
-        <the-side-navigation-bar/>
-      </template>
-    </the-left-column>
-    <the-center-column class="flex-item">
-      <template v-slot:center-column>
-        <slot name="center-column"></slot>
-      </template>
-    </the-center-column>
-    <the-right-column class="flex-item">
-      <template v-slot:right-column>
-        <the-side-bar/>
-      </template>
-    </the-right-column>
-  </div>
+  <transition>
+    <div class="page" v-if="flag">
+      <div class="flex-container">
+        <the-left-column class="flex-item">
+          <template v-slot:left-column>
+            <the-side-navigation-bar/>
+          </template>
+        </the-left-column>
+        <the-center-column class="flex-item">
+          <template v-slot:center-column>
+            <slot name="center-column"></slot>
+          </template>
+        </the-center-column>
+        <the-right-column class="flex-item">
+          <template v-slot:right-column>
+            <the-side-bar/>
+          </template>
+        </the-right-column>
+      </div>
+    </div>
+  </transition>
 </div>
 </template>
 
@@ -25,27 +29,43 @@
 
   height: $page-height;
 
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
+  .page {
 
-  .flex-item {
-  }
-
-  #the-left-column {
-
-    #the-side-navigation-bar {
-      position: fixed;
-      top: 0; left: 0;
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
     }
 
+    .flex-item {
+    }
+
+    #the-left-column {
+
+      #the-side-navigation-bar {
+        position: fixed;
+        top: 0; left: 0;
+      }
+
+    }
+
+    #the-center-column {
+    }
+
+    #the-right-column {
+    }
+  
   }
 
-  #the-center-column {
+  .v-enter-active, .v-leave-active {
+    transition: opacity $delay;
   }
 
-  #the-right-column {
+  .v-enter, .v-leave-to {
+    opacity: 0;
+  }
+
+  .v-enter-to, .v-leave {
+    opacity: 1
   }
 
 }
@@ -61,6 +81,12 @@ export default {
   name: "three-column-template",
   components: {
     TheLeftColumn, TheCenterColumn, TheRightColumn, TheSideNavigationBar, TheSideBar
+  },
+  props: {
+    flag: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>

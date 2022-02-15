@@ -40,7 +40,8 @@ module.exports = {
                 "./src/assets/css/resources.scss",
                 "./src/assets/css/default.scss",
                 "./src/assets/css/mixin.scss",
-                "./src/assets/css/page.scss"
+                "./src/assets/css/page.scss",
+                "./src/assets/css/const.scss"
               ]
             }
           }
