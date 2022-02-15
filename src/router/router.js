@@ -1,5 +1,6 @@
 import VueRouter from "vue-router"
 
+import { delay } from "../assets/js/const"
 import IndexPage from "../views/pages/production/index/IndexPage.vue"
 import AboutMePage from "../views/pages/production/about-me/AboutMePage"
 import DevelopmentPage from "../views/pages/production/development/DevelopmentPage"
@@ -45,6 +46,10 @@ const routes = [
 
 const router = new VueRouter({
   routes: routes
+})
+
+router.beforeEach(function (to, from, next) {
+  setTimeout(next, delay * 2.0)
 })
 
 // NOTE: export default { router } does not work ...

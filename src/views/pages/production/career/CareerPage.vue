@@ -2,7 +2,8 @@
 <div id="career-page">
   <div class="page">
 
-    <index-template>
+    <index-template v-bind:flag="flag">
+
       <template v-slot:the-header>
         <div class="header-item">
           <div class="header-text">
@@ -141,7 +142,6 @@
           </div>
 
         </div>
-        
       </template>
     </index-template>
   </div>
@@ -154,13 +154,28 @@
 </style>
 
 <script>
+import delay from "../../../../assets/js/const"
 import IndexTemplate from "../../../../components/templates/IndexTemplate"
 import ExternalLink from "../../../../components/atoms/ExternalLink"
 import JustifiedText from "../../../../components/atoms/JustifiedText.vue"
 export default {
-  name: "Development-page",
+  name: "career-page",
   components: {
     IndexTemplate, ExternalLink, JustifiedText
+  },
+  data: function() {
+    return {
+      flag: false
+    }
+  },
+  mounted: function() {
+    this.flag = true
+  },
+  beforeRouteLeave: function(to, from, next) {
+    this.flag = false
+    setTimeout(function() {
+      next()
+    }, delay)
   }
 }
 </script>

@@ -1,8 +1,9 @@
 <template>
 <div id="research-page">
   <div class="page">
+    
+    <index-template v-bind:flag="flag">
 
-    <index-template>
       <template v-slot:the-header>
         <div class="header-item">
           <div class="header-text">
@@ -54,6 +55,7 @@
 </style>
 
 <script>
+import delay from "../../../../assets/js/const"
 import IndexTemplate from "../../../../components/templates/IndexTemplate"
 import ExternalLink from "../../../../components/atoms/ExternalLink"
 import JustifiedText from "../../../../components/atoms/JustifiedText.vue"
@@ -61,6 +63,20 @@ export default {
   name: "research-page",
   components: {
     IndexTemplate, ExternalLink, JustifiedText
+  },
+  data: function() {
+    return {
+      flag: false
+    }
+  },
+  mounted: function() {
+    this.flag = true
+  },
+  beforeRouteLeave: function(to, from, next) {
+    this.flag = false
+    setTimeout(function() {
+      next()
+    }, delay)
   }
 }
 </script>

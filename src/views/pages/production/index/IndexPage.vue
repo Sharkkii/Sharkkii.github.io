@@ -1,6 +1,7 @@
 <template>
 <div id="index-page">
-  <three-column-layout-template>
+  <three-column-layout-template v-bind:flag="flag">
+
     <template v-slot:center-column>
 
       <!-- About Me -->
@@ -210,6 +211,7 @@ $text-width: 27vw;
 </style>
 
 <script>
+import { delay } from "../../../../assets/js/const"
 import SharkkiiPng from "../../../../assets/img/sharkkii.png"
 import InternalLink from "../../../../components/atoms/InternalLink.vue"
 import EntryPoint from "../../../../components/organisms/EntryPoint.vue"
@@ -221,8 +223,18 @@ export default {
   },
   data: function() {
     return {
-      SharkkiiPng
+      SharkkiiPng,
+      flag: false
     }
+  },
+  mounted: function() {
+    this.flag = true
+  },
+  beforeRouteLeave: function(to, from, next) {
+    this.flag = false
+    setTimeout(function() {
+      next()
+    }, delay)
   }
 }
 </script>
