@@ -60,7 +60,7 @@
                   <li><p>shaRL: Reinforcement Learning Framework</p></li>
                   <li><p>shaDL: Deep Learning Framework</p></li>
                   <li><p>Enshu3: 1-month Research Projects</p></li>
-                  <!-- <li><p>Numer0n: My first program</p></li> -->
+                  <li><p>Aiproject: AI-powered Task Manager</p></li>
                 </ul>
               </div>
             </div>
@@ -79,8 +79,8 @@
               <p class="headline">CAREER</p>
               <div class="paragraph">
                 <ul>
-                  <li><p>Summer-Internship/Part-Time-Employee @ PFN</p></li>
-                  <li><p>Lecturer of Global Consumer Intelligence @ UTokyo (Matsuo Lab.)</p></li>
+                  <li><p>Summer-Internship/Part-Time-Employee @ Preferred Networks</p></li>
+                  <li><p>Lecture on Global Consumer Intelligence @ UTokyo (Matsuo Lab.)</p></li>
                 </ul>
               </div>
             </div>

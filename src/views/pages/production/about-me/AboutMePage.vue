@@ -24,11 +24,10 @@
             <p class="headline">Affiliation</p>
             <ul class="paragraph">
               <li>
-                <p>1st-year Master Student</p>
-                <p>@ Dept. of Computer Science,
+                <p>1st-year Master Student @
                   <external-link link="https://www.i.u-tokyo.ac.jp/" class="display-inline color-main">
                     <template v-slot:link>
-                      Graduate School of Information Science and Technology, The University of Tokyo
+                      Dept. of Computer Science, Graduate School of Information Science and Technology, The University of Tokyo
                     </template>
                   </external-link>
                 </p>
@@ -65,7 +64,32 @@
             <p class="headline">Professioanl History</p>
             <ul class="paragraph">
               <li>
-                <p>April 2020 - <span class="fontweight-bold">present</span></p>
+                <p>October 2021 - <span class="fontweight-bold">present</span></p>
+                <p>
+                  Part-time Employee @
+                  <external-link link="https://www.preferred.jp/ja/" class="display-inline color-main">
+                    <template v-slot:link>
+                      Preferred Networks
+                    </template>
+                  </external-link>
+                </p>
+              </li>
+              <li>
+                <p>August 2021 - September 2021</p>
+                <p>
+                  Summer Internship @ Preferred Networks
+                </p>
+                <p>
+                  --
+                  <external-link link="https://www.preferred.jp/ja/news/internship2021/" class="display-inline color-main">
+                    <template v-slot:link>
+                      PFN2021 Summer Internship
+                    </template>
+                  </external-link>
+                </p>
+              </li>
+              <li>
+                <p>April 2020 - March 2022</p>
                 <p>
                   Lecture @ Chair for Global Consumer Intelligence provided by
                   <external-link link="https://weblab.t.u-tokyo.ac.jp/" class="display-inline color-main">
@@ -93,10 +117,16 @@
                       2021 Summer
                     </template>
                   </external-link>
+                  /
+                  <external-link link="https://gci.t.u-tokyo.ac.jp/gci-2021-winter/" class="display-inline color-main">
+                    <template v-slot:link>
+                      2021 Winter
+                    </template>
+                  </external-link>
                 </p>
               </li>
               <li>
-                <p>April 2019 - March 2019</p>
+                <p>April 2019 - March 2020</p>
                 <p>
                   Course Management @ Chair for Global Consumer Intelligence
                 </p>
@@ -117,21 +147,34 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="skills">
-            <p class="headline">Skills</p>
-            <ul>
-              <li></li>
+          <div class="main-item qualification">
+            <p class="headline">Qualification</p>
+            <ul class="paragraph">
+              <li>
+                <p>
+                  Applied Information Technology Engineer Examination by
+                  <external-link link="https://www.ipa.go.jp/" class="display-inline color-main">
+                    <template v-slot:link>
+                      IPA (Information-technology Promotion Agency)
+                    </template>
+                  </external-link>
+                </p>
+              </li>
             </ul>
-          </div> -->
+          </div>
           <div class="main-item github">
             <p class="headline">GitHub Account</p>
-            <p class="paragraph">
-              <external-link link="https://github.com/Sharkkii" class="display-inline color-main">
-                <template v-slot:link>
-                  Sharkkii
-                </template>
-              </external-link>
-            </p>
+            <ul class="paragraph">
+              <li>
+                <p>
+                  <external-link link="https://github.com/Sharkkii" class="display-inline color-main">
+                    <template v-slot:link>
+                      Sharkkii
+                    </template>
+                  </external-link>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </template>
