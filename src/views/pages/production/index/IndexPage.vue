@@ -38,8 +38,8 @@
               <div class="paragraph">
                 <p>Reinforcement Learning</p>
                 <ul>
-                  <li><p>Control as Inference</p></li>
                   <li><p>Partially-Observable MDP</p></li>
+                  <li><p>Control as Inference</p></li>
                 </ul>
               </div>
             </div>
@@ -81,7 +81,7 @@
               <div class="paragraph">
                 <ul>
                   <li><p>Summer-Internship/Part-Time-Employee @ Preferred Networks</p></li>
-                  <li><p>Lecture on Global Consumer Intelligence @ UTokyo (Matsuo Lab.)</p></li>
+                  <li><p>Lecturer on Global Consumer Intelligence @ UTokyo (Matsuo Lab.)</p></li>
                 </ul>
               </div>
             </div>
@@ -107,7 +107,7 @@
       </entry-point> -->
 
       <!-- Under Construction -->
-      <entry-point link="not-found" disabled>
+      <entry-point link="not-found" disabled v-for="n in 1" v-bind:key="n">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">

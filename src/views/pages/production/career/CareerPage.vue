@@ -18,32 +18,18 @@
 
           <div class="main-item PFN">
 
-            <p class="headline">Summer Internship 2021 @ Preferred Networks (PFN)</p>
+            <p class="headline">Summer Internship 2021 @ Preferred Networks</p>
+            <br>
+            <b><p>What I have done</p></b>
             <ul class="paragraph">
               <li>
                 <p>
                   I participated in the summer internship held by
                   <external-link link="https://www.preferred.jp/ja/" class="display-inline color-main">
                     <template v-slot:link>
-                      Preferred Networks
+                      Preferred Networks (PFN)
                     </template>
                   </external-link>
-                  .
-                </p>
-                <p>
-                  I was engaged in the development of 
-                  <external-link link="https://playgram.jp/" class="display-inline color-main">
-                    <template v-slot:link>
-                      Playgram
-                    </template>
-                  </external-link>
-                  providing programming-education materials for children.
-                </p>
-                <p>
-                  I have created one chapter (a unit of materials) on Artificial Intelligence,
-                </p>
-                <p>
-                  which has been released as the first chapter on AI in Playgram.
                 </p>
                 <p>
                   -> More details:
@@ -54,6 +40,21 @@
                   </external-link>
                 </p>
               </li>
+              <li>
+                <p>
+                  I was engaged in the development of 
+                  <external-link link="https://playgram.jp/" class="display-inline color-main">
+                    <template v-slot:link>
+                      Playgram
+                    </template>
+                  </external-link>
+                  providing programming-education materials for children. I have created one chapter (a unit of materials) on Artificial Intelligence, which has been released as the first chapter on AI in Playgram!
+                </p>
+              </li>
+            </ul>
+            <br>
+            <b><p>Blog</p></b>
+            <ul class="paragraph">
               <li>
                 <p>
                   My blog will be published on
@@ -71,20 +72,13 @@
 
           <div class="main-item PFN">
 
-            <p class="headline">Part-time Employee @ Preferred Networks (PFN)</p>
+            <p class="headline">Part-time Employee @ Preferred Networks</p>
+            <br>
+            <b><p>What I'm doing now</p></b>
             <ul class="paragraph">
               <li>
                 <p>
-                  I continue to develop the contents of
-                  <external-link link="https://playgram.jp/" class="display-inline color-main">
-                    <template v-slot:link>
-                      Playgram
-                    </template>
-                  </external-link>
-                  from PFN2021 summer internship.
-                </p>
-                <p>
-                  We are planning to enrich the subsequent chapters on AI.
+                  I continue to develop the contents of Playgram from PFN2021 summer internship, planning to enrich the subsequent chapters on AI.
                 </p>
               </li>
             </ul>
@@ -93,7 +87,9 @@
           
           <div class="main-item MatsuoLab">
 
-            <p class="headline">Lecturer of Global Consumer Intelligence (GCI) @ Matsuo Lab.</p>
+            <p class="headline">Lecturer of GCI @ Matsuo Lab.</p>
+            <br>
+            <b><p>What I have done</p></b>
             <ul class="paragraph">
               <li>
                 <p>
@@ -105,11 +101,10 @@
                   </external-link>
                   at the University of Tokyo.
                 </p>
+              </li>
+              <li>
                 <p>
-                  I have given lectures 4 times on data science
-                </p>
-                <p>
-                  (2 times on machine-learning, 2 times on Python or its libraries used in data analysis).
+                  I have given lectures 4 times on data science (2 times on machine learning, 2 times on Python or its libraries commonly used in data analysis).
                 </p>
                 <p>
                   -> More details:

@@ -16,29 +16,42 @@
       <template v-slot:the-main>
         <div>
 
-          <div class="main-item RL">
+          <div class="main-item reinforcement-learning">
             <p class="headline">Reinforcement Learning</p>
+            <br>
+            <b><p>Partially-Observable MDP</p></b>
             <ul class="paragraph">
               <li>
-                <p>Control as Inference</p>
+                <p>My current research interest lies in partially-observable environment models, which are more realistic than fully-observable ones</p>
               </li>
               <li>
-                <p>Inverse Reinforcement Learning (IRL)</p>
+                <p>I have been striving to discover a "nice" structure with which the agent can efficiently or effectively solve RL problems</p>
+              </li>
+            </ul>
+            <br>
+            <b><p>Control as Inference</p></b>
+            <ul class="paragraph">
+              <li>
+                <p>Control as Inference (CaI) is a probabilistic generative model for RL</p>
               </li>
               <li>
-                <p>Imitation Learning (IL)</p>
-                <p>-- Generative Adversarial Imitation Learning (GAIL)</p>
+                <p>CaI framework can provide another explanation for entropy-regularized RL (and other RL problem settings)</p>
+              </li>
+              <li>
+                <p>This was the research topic of my bachelor thesis!</p>
               </li>
             </ul>
           </div>
-          <div class="main-item DL">
-            <p class="headline">Deep Learning</p>
+          <div class="main-item probabilistic-model">
+            <p class="headline">Probabilistic Model & Representation Learning</p>
+            <br>
+            <b><p>Probabilistic Model</p></b>
             <ul class="paragraph">
               <li>
-                <p>Generative Model</p>
-                <p>-- Generative Adversarial Network (GAN)</p>
-                <p>-- Variational Auto Encoder (VAE)</p>
-                <p>-- Generative Moment Matching Network (GMMN)</p>
+                <p>I'm curious about what structure (probabilistic model) is "nice" for RL, which seems to be far more difficult than other problem settings (supervise learning, unsupervised learning)</p>
+              </li>
+              <li>
+                <p>Also interested in generative models such as Generative Adversarial Network (GAN), Variational Auto Encoder (VAE), Generative Moment Matching Network (GMMN)</p>
               </li>
             </ul>
           </div>

@@ -22,7 +22,10 @@
                 <p class="headline">shaRL: Reinforcement Learning Framework</p>
                 <ul class="paragraph">
                   <li>
-                    <p>Try to make RL programs easy to write; RL by building blocks</p>
+                    <p>The concept is "Reinforcement Learning by building blocks"</p>
+                  </li>
+                  <li>
+                    <p>shaRL makes RL programs easy to write</p>
                   </li>
                 </ul>
               </div>
@@ -35,10 +38,26 @@
                 <p class="headline">shaDL: Deep Learning Framework</p>
                 <ul class="paragraph">
                   <li>
-                    <p>Try to make DL programs easy to write; DL by building blocks</p>
+                    <p>The concept is "Deep Learning by building blocks"</p>
+                  </li>
+                  <li>
+                    <p>shaDL makes DL programs easy to write</p>
                   </li>
                   <li>
                     <p>This is for my own sake; to understand how a DL library works</p>
+                  </li>
+                </ul>
+              </div>
+            </template>
+          </external-link>
+
+          <external-link link="https://github.com/Sharkkii/Sharkkii.github.io">
+            <template v-slot:link>
+              <div class="main-item sharkkii-github-io">
+                <p class="headline">Sharkkii.github.io</p>
+                <ul class="paragraph">
+                  <li>
+                    <p>This is my own website developed with Vue.js framework</p>
                   </li>
                 </ul>
               </div>
@@ -51,7 +70,7 @@
                 <p class="headline">Enshu3: 1-month Research Projects</p>
                 <ul class="paragraph">
                   <li>
-                    <p>Enshu3 is a course of the Dept. of Information Science, UT</p>
+                    <p>Enshu3 is a course of the Dept. of Information Science, UTokyo</p>
                   </li>
                   <li>
                     <p>3 projects (1-month per 1-project)</p>
@@ -72,16 +91,32 @@
             </template>
           </external-link>
 
+          <external-link link="https://github.com/Sharkkii/Aiproject">
+            <template v-slot:link>
+              <div class="main-item Aiproject">
+                <p class="headline">Aiproject: AI-powered Task Manager</p>
+                <ul class="paragraph">
+                  <li>
+                    <p>This development project was created in a course of Graduate School of IST, UTokyo</p>
+                  </li>
+                  <li>
+                    <p>The job scheduling system is based on reinforcement learning techniques (implemented in shaRL framework)</p>
+                  </li>
+                </ul>
+              </div>
+            </template>
+          </external-link>
+
           <external-link link="https://github.com/Sharkkii/Numer0n">
                 <template v-slot:link>
               <div class="main-item Numer0n">
                 <p class="headline">Numer0n: Number-Guessing Game</p>
                 <ul class="paragraph">
                   <li>
-                    <p>Create Game AI for Numer0n</p>
+                    <p>I have created Game-AI for Numer0n in Python</p>
                   </li>
                   <li>
-                    <p>This is the first program I made!</p>
+                    <p>This is the first program I wrote!</p>
                   </li>
                 </ul>
               </div>
@@ -92,15 +127,6 @@
             <template v-slot:link>
               <div class="main-item Othello">
                 <p class="headline">Othello: Othello Game Written by Python</p>
-                <!-- <ul class="paragraph"></ul> -->
-              </div>
-            </template>
-          </external-link>
-
-          <external-link link="https://github.com/Sharkkii/Archive">
-            <template v-slot:link>
-              <div class="main-item Archive">
-                <p class="headline">Archive: A Collection of Algorithms</p>
                 <!-- <ul class="paragraph"></ul> -->
               </div>
             </template>
