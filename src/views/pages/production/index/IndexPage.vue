@@ -211,10 +211,10 @@ $text-width: 27vw;
 </style>
 
 <script>
-import SharkkiiPng from "../../../../assets/img/sharkkii.png"
-import InternalLink from "../../../../components/atoms/InternalLink.vue"
-import EntryPoint from "../../../../components/organisms/EntryPoint.vue"
-import ThreeColumnLayoutTemplate from "../../../../components/templates/ThreeColumnLayoutTemplate.vue"
+import SharkkiiPng from "@/assets/img/sharkkii.png"
+import InternalLink from "@/components/atoms/InternalLink.vue"
+import EntryPoint from "@/components/organisms/EntryPoint.vue"
+import ThreeColumnLayoutTemplate from "@/components/templates/ThreeColumnLayoutTemplate.vue"
 export default {
   name: "IndexPage",
   components: {

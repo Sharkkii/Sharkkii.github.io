@@ -3,8 +3,8 @@ import VueRouter from "vue-router"
 import router from "./router/router.js"
 import App from "./App"
 
-require("./assets/css/index.scss")
-require("./assets/css/common.scss")
+require("@/assets/css/index.scss")
+require("@/assets/css/common.scss")
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner } from "@fortawesome/free-solid-svg-icons"
