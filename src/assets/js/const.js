@@ -1,1 +1,6 @@
-export const delay = 500
+const delay = 500
+
+import Vue from "vue"
+Vue.prototype.$delay = delay
+
+export { delay }

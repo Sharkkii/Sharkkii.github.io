@@ -211,7 +211,6 @@ $text-width: 27vw;
 </style>
 
 <script>
-import { delay } from "../../../../assets/js/const"
 import SharkkiiPng from "../../../../assets/img/sharkkii.png"
 import InternalLink from "../../../../components/atoms/InternalLink.vue"
 import EntryPoint from "../../../../components/organisms/EntryPoint.vue"
@@ -234,7 +233,7 @@ export default {
     this.flag = false
     setTimeout(function() {
       next()
-    }, delay)
+    }, this.$delay)
   }
 }
 </script>

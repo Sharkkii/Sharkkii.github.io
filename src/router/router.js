@@ -1,6 +1,6 @@
 import VueRouter from "vue-router"
 
-import { delay } from "../assets/js/const"
+import { delay } from "../assets/js/const.js"
 import IndexPage from "../views/pages/production/index/IndexPage.vue"
 import AboutMePage from "../views/pages/production/about-me/AboutMePage"
 import DevelopmentPage from "../views/pages/production/development/DevelopmentPage"

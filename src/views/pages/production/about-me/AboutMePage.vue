@@ -190,7 +190,6 @@
 </style>
 
 <script>
-import delay from "../../../../assets/js/const"
 import IndexTemplate from "../../../../components/templates/IndexTemplate"
 import ExternalLink from "../../../../components/atoms/ExternalLink"
 import JustifiedText from "../../../../components/atoms/JustifiedText.vue"
@@ -211,7 +210,7 @@ export default {
     this.flag = false
     setTimeout(function() {
       next()
-    }, delay)
+    }, this.$delay)
   }
 }
 </script>
