@@ -6,9 +6,9 @@ require("@/assets/css/common.scss")
 import { delay, breakpoint } from "@/assets/js/const.js"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner } from "@fortawesome/free-solid-svg-icons"
+import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner, faIdCard } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-library.add(faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner)
+library.add(faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner, faIdCard)
 
 import App from "./App"
 import ExpandDiv from "@/components/atoms/ExpandDiv"
