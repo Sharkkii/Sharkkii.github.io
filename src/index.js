@@ -1,6 +1,5 @@
 import { createApp } from "vue"
 import router from "./router/router.js"
-import App from "./App"
 
 require("@/assets/css/index.scss")
 require("@/assets/css/common.scss")
@@ -11,13 +10,17 @@ import { faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 library.add(faShip, faBars, faTools, faCopyright, faGraduationCap, faCogs, faBook, faBriefcase, faLaptopCode, faSpinner)
 
+import App from "./App"
+import ExpandDiv from "@/components/atoms/ExpandDiv"
+import { MediaQueryMixin } from "@/assets/js/mixin"
+
 const app = createApp(App)
 app.component("fa", FontAwesomeIcon)
+app.component("expand-div", ExpandDiv)
 app.use(router)
+app.mixin(MediaQueryMixin)
 
 app.config.globalProperties.$delay = delay
 app.config.globalProperties.$breakpoint = breakpoint
 
 app.mount("#app")
-
-export { app }
