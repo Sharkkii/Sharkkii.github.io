@@ -1,6 +1,6 @@
 <template>
 <div id="logo">
-  <font-awesome-icon icon="ship"></font-awesome-icon>
+  <fa icon="ship"></fa>
   <span>SHARKKII</span>
 </div>
 </template>

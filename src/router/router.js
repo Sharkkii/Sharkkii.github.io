@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter } from "vue-router"
+import { createWebHashHistory } from "vue-router"
 
 import { delay } from "@/assets/js/const"
 import IndexPage from "@/views/pages/production/index/IndexPage.vue"
@@ -45,7 +46,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: routes
 })
 

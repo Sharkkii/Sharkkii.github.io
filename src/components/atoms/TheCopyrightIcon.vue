@@ -1,6 +1,6 @@
 <template>
 <div id="copyright-icon">
-  <font-awesome-icon icon="copyright"></font-awesome-icon>
+  <fa icon="copyright"></fa>
   <span>2021 SHARKKII</span>
 </div>
 </template>
