@@ -106,7 +106,7 @@ $page-height: 300vh;
 $header-height: 100%; // 400px;
 $header-width: 100%;
 
-$main-min-height: 500px;
+$main-min-height: 100vh; // 500px;
 $main-width: 100%;
 
 $footer-height: 20vh;
@@ -134,26 +134,26 @@ $abstract-height: 200px;
 
 // padding & margin
 
-$header-padding-horizontal: 20px;
-$header-padding-vertical: 20px;
+$header-padding-horizontal: 5vw;
+$header-padding-vertical: 5vh;
 
-$main-padding-horizontal: $logo-width;
-$main-padding-vertical: 20px;
+$main-padding-horizontal: 10vw;
+$main-padding-vertical: 10vh;
 
-$main-contents-padding-horizontal: 20px;
-$main-contents-padding-vertical: 20px;
+$main-contents-padding-horizontal: 10vw;
+$main-contents-padding-vertical: 10vh;
 
-$footer-padding-horizontal: 20px;
-$footer-padding-vertical: 20px;
+$footer-padding-horizontal: 10vw;
+$footer-padding-vertical: 10vh;
 
-$header-margin-horizontal: 20px;
-$header-margin-vertical: 20px;
+$header-margin-horizontal: 10vw;
+$header-margin-vertical: 10vh;
 
-$main-margin-horizontal: $logo-width;
-$main-margin-vertical: 20px;
+$main-margin-horizontal: 10vw;
+$main-margin-vertical: 10vh;
 
-$footer-margin-horizontal: 20px;
-$footer-margin-vertical: 20px;
+$footer-margin-horizontal: 10vw;
+$footer-margin-vertical: 10vh;
 
 // text
 

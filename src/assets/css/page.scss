@@ -8,7 +8,7 @@
     border-top: solid 2px $main-color;
     border-bottom: solid 2px $main-color;
     box-sizing: border-box;
-    height: 400px;
+    height: 20vh;
     margin: 0 auto;
     width: 80vw;
 
@@ -17,8 +17,8 @@
       height: 100%;
       width: 60vw;
       color: $main-color;
-      font-size: 100px;
-      line-height: 400px;
+      font-size: 4vh;
+      line-height: 20vh;
 
     }
 
@@ -26,11 +26,11 @@
 
   .main-item {
 
-    border-left: solid 20px $main-color;
-    border-right: solid 1px $main-color;
+    border-left: solid 4vw $main-color;
+    border-right: solid 0.2vw $main-color;
     box-sizing: border-box;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-bottom: 5vh;
+    padding: 2vh;
 
     .headline {
       color: $main-color;
