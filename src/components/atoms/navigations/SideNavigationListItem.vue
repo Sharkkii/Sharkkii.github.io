@@ -10,8 +10,13 @@
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .side-navigation-list-item {
+
+  width: $side-navigation-item-width;
+  height: $side-navigation-item-height;
+  font-size: $fontsize-large;
+  line-height: $side-navigation-item-height;
   
   background-color: $main-color-80;
   color: $white;

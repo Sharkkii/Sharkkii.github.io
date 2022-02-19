@@ -4,18 +4,34 @@
   
     <navigation-list-item class="margin-right-auto flex-item" v-bind:link="'/'">
       <template v-slot:navigation-list-item>
-        <logo/>
+        <sharkkii-icon v-bind:hasText="isPc"/>
       </template>
     </navigation-list-item>
 
-    <navigation-list-item class="flex-item" v-for="item in items" v-bind:key="item.link" v-bind:link="item.link">
+    <navigation-list-item class="flex-item" v-bind:link="'/research'">
       <template v-slot:navigation-list-item>
-        <div>
-          <p>{{ item.text }}</p>
-        </div>
+        <research-icon v-bind:hasText="isPc"/>
       </template>
     </navigation-list-item>
-  
+
+    <navigation-list-item class="flex-item" v-bind:link="'/development'">
+      <template v-slot:navigation-list-item>
+        <development-icon v-bind:hasText="isPc"/>
+      </template>
+    </navigation-list-item>
+
+    <navigation-list-item class="flex-item" v-bind:link="'/career'">
+      <template v-slot:navigation-list-item>
+        <career-icon v-bind:hasText="isPc"/>
+      </template>
+    </navigation-list-item>
+
+    <navigation-list-item class="flex-item" v-bind:link="'/about-me'">
+      <template v-slot:navigation-list-item>
+        <about-me-icon v-bind:hasText="isPc"/>
+      </template>
+    </navigation-list-item>
+
   </div>
 </div>
 </template>
@@ -41,23 +57,17 @@
 </style>
 
 <script>
-import InternalLink from "../atoms/InternalLink"
-import NavigationListItem from "../atoms/NavigationListItem"
-import Logo from "./Logo"
+import SharkkiiIcon from "@/components/atoms/icons/SharkkiiIcon.vue"
+import ResearchIcon from "@/components/atoms/icons/ResearchIcon.vue"
+import DevelopmentIcon from "@/components/atoms/icons/DevelopmentIcon.vue"
+import CareerIcon from "@/components/atoms/icons/CareerIcon.vue"
+import AboutMeIcon from "@/components/atoms/icons/AboutMeIcon.vue"
+import InternalLink from "@/components/atoms/InternalLink"
+import NavigationListItem from "@/components/atoms/NavigationListItem"
 export default {
   name: "the-navigation-list",
   components: {
-    InternalLink, NavigationListItem, Logo
-  },
-  data: function() {
-    return {
-      "items": [
-        { link: "/research", text: "Research" },
-        { link: "/development", text: "Development" },
-        { link: "/career", text: "Career" },
-        { link: "/about-me", text: "About Me" },
-      ]
-    }
+    InternalLink, NavigationListItem, SharkkiiIcon, ResearchIcon, DevelopmentIcon, CareerIcon, AboutMeIcon
   }
 }
 </script>

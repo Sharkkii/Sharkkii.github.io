@@ -2,7 +2,7 @@
 <div class="internal-link">
   <router-link v-bind:to="link">
     <slot name="link">
-      <span>No Item</span>
+      <div>No Item</div>
     </slot>
   </router-link>
 </div>
