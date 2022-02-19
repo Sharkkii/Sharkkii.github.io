@@ -1,4 +1,4 @@
-import VueRouter from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 
 import { delay } from "@/assets/js/const"
 import IndexPage from "@/views/pages/production/index/IndexPage.vue"
@@ -38,13 +38,14 @@ const routes = [
     path: "/not-found",
     component: NotFoundPage
   },
-  {
-    path: "*",
-    redirect: "/not-found"
-  }
+  // {
+  //   path: "*",
+  //   redirect: "/not-found"
+  // }
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHistory(),
   routes: routes
 })
 
@@ -52,5 +53,4 @@ router.beforeEach(function (to, from, next) {
   setTimeout(next, delay * 2.0)
 })
 
-// NOTE: export default { router } does not work ...
 export default router

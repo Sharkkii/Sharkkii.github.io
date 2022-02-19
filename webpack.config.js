@@ -6,18 +6,17 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "./docs/"),
-    // path: path.resolve(__dirname, "./public/dist"),
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "./docs"),
-    // contentBase: path.join(__dirname, "./public/dist"),
-    watchContentBase: true
+    static: {
+      directory: path.join(__dirname, "./docs")
+    }
   },
   resolve: {
     extensions: [".js", ".vue"],
     alias: {
-      vue$: "vue/dist/vue.esm.js",
+      vue$: "vue/dist/vue.esm-bundler.js",
       "@": path.resolve(__dirname, "./src/")
     }
   },
