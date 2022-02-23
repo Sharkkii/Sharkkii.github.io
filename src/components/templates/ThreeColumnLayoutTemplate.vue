@@ -60,11 +60,11 @@
     transition: opacity $delay;
   }
 
-  .v-enter, .v-leave-to {
+  .v-enter-from, .v-leave-to {
     opacity: 0;
   }
 
-  .v-enter-to, .v-leave {
+  .v-enter-to, .v-leave-from {
     opacity: 1
   }
 
