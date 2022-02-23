@@ -5,13 +5,13 @@
     <template v-slot:center-column>
 
       <!-- About Me -->
-      <entry-point link="about-me">
+      <entry-point link="about-me" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">
               <img v-bind:src="SharkkiiPng" />
             </div>
-            <div class="flex-item text">
+            <div class="flex-item text" v-if="isPc || isTablet">
               <div class="headline">
                 <p>ABOUT ME</p>
               </div>
@@ -22,18 +22,24 @@
                 </ul>
               </div>
             </div>
+            <div class="flex-item text" v-if="isMobile">
+              <expand-div class="headline">
+                <centerized-text v-bind:text="'ABOUT ME'">
+                </centerized-text>
+              </expand-div>
+            </div>
           </div>
         </template>
       </entry-point>
 
       <!-- Research -->
-      <entry-point link="research">
+      <entry-point link="research" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">
-              <font-awesome-icon icon="graduation-cap"></font-awesome-icon>
+              <fa icon="graduation-cap"></fa>
             </div>
-            <div class="flex-item text">
+            <div class="flex-item text" v-if="isPc || isTablet">
               <p class="headline">RESEARCH</p>
               <div class="paragraph">
                 <p>Reinforcement Learning</p>
@@ -43,18 +49,25 @@
                 </ul>
               </div>
             </div>
+            <div class="flex-item text" v-if="isMobile">
+              <expand-div class="headline">
+                <centerized-text v-bind:text="'RESEARCH'">
+                </centerized-text>
+              </expand-div>
+            </div>
+
           </div>
         </template>
       </entry-point>
 
       <!-- Development -->
-      <entry-point link="development">
+      <entry-point link="development" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">
-              <font-awesome-icon icon="laptop-code"></font-awesome-icon>
+              <fa icon="laptop-code"></fa>
             </div>
-            <div class="flex-item text">
+            <div class="flex-item text" v-if="isTablet || isPc">
               <p class="headline">DEVELOPMENT</p>
               <div class="paragraph">
                 <ul>
@@ -65,18 +78,24 @@
                 </ul>
               </div>
             </div>
+            <div class="flex-item text" v-if="isMobile">
+              <expand-div class="headline">
+                <centerized-text v-bind:text="'DEVELOP'">
+                </centerized-text>
+              </expand-div>
+            </div>
           </div>
         </template>
       </entry-point>
 
       <!-- Career -->
-      <entry-point link="career">
+      <entry-point link="career" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">
-              <font-awesome-icon icon="briefcase"></font-awesome-icon>
+              <fa icon="briefcase"></fa>
             </div>
-            <div class="flex-item text">
+            <div class="flex-item text" v-if="isTablet || isPc">
               <p class="headline">CAREER</p>
               <div class="paragraph">
                 <ul>
@@ -85,36 +104,31 @@
                 </ul>
               </div>
             </div>
+            <div class="flex-item text" v-if="isMobile">
+              <expand-div class="headline">
+                <centerized-text v-bind:text="'CAREER'">
+                </centerized-text>
+              </expand-div>
+            </div>
           </div>
         </template>
       </entry-point>
 
-      <!-- Study -->
-      <!-- <entry-point link="study">
-        <template v-slot:content>
-          <div class="flex-container">
-            <div class="flex-item image">
-              <font-awesome-icon icon="book"></font-awesome-icon>
-            </div>
-            <div class="flex-item text">
-              <p class="headline">STUDY</p>
-              <ul class="paragraph">
-                <li><p>Tech Blog</p></li>
-              </ul>
-            </div>
-          </div>
-        </template>
-      </entry-point> -->
-
       <!-- Under Construction -->
-      <entry-point link="not-found" disabled v-for="n in 1" v-bind:key="n">
+      <entry-point link="not-found" disabled v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover" v-for="n in 2" v-bind:key="n">
         <template v-slot:content>
           <div class="flex-container">
             <div class="flex-item image">
-              <font-awesome-icon icon="spinner"></font-awesome-icon>
+              <fa icon="spinner"></fa>
             </div>
-            <div class="flex-item text">
-              <p class="headline">UNDER CONSTRUCTION...</p>
+            <div class="flex-item text" v-if="isTablet || isPc">
+              <p class="headline">UNDER CONSTRUCTION</p>
+            </div>
+            <div class="flex-item text" v-if="isMobile">
+              <expand-div class="paragraph">
+                <centerized-text v-bind:text="'UNDER CONSTRUCTION'">
+                </centerized-text>
+              </expand-div>
             </div>
           </div>
         </template>
@@ -125,7 +139,7 @@
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $border-width: 3vw;
 $outer-content-height: 12vw;
 $outer-container-height: calc(#{$outer-content-height} + 2 * #{$border-width});
@@ -139,9 +153,8 @@ $text-width: 27vw;
 
 #index-page {
 
-  @include EntryPointSize($class:".entry-point", $width:$outer-container-width, $height:$outer-container-height, $border-width:$border-width, $border-width-hover:1vw);
-
   .entry-point {
+
     margin: 5vw auto;
     
     transition-property: opacity;
@@ -151,10 +164,10 @@ $text-width: 27vw;
         opacity: 0.5;
       }
     }
-
     &[disabled] {
       opacity: 0.1;
     }
+    
   }
 
   .flex-container {
@@ -215,15 +228,43 @@ import SharkkiiPng from "@/assets/img/sharkkii.png"
 import InternalLink from "@/components/atoms/InternalLink.vue"
 import EntryPoint from "@/components/organisms/EntryPoint.vue"
 import ThreeColumnLayoutTemplate from "@/components/templates/ThreeColumnLayoutTemplate.vue"
+import { MediaQueryMixin } from "@/assets/js/mixin"
+import CenterizedText from "@/components/atoms/CenterizedText.vue"
+
 export default {
   name: "IndexPage",
   components: {
-    InternalLink, EntryPoint, ThreeColumnLayoutTemplate
+    InternalLink, EntryPoint, ThreeColumnLayoutTemplate, CenterizedText
   },
+  mixins: [
+    MediaQueryMixin
+  ],
   data: function() {
     return {
       SharkkiiPng,
       flag: false
+    }
+  },
+  computed: {
+    entryPointWidth: function() {
+      if (this.isMobile) { return "54vw" }
+      else if (this.isTablet) { return "54vw" }
+      else if (this.isPc) { return "54vw" }
+    },
+    entryPointHeight: function() {
+      if (this.isMobile) { return "18vw" }
+      else if (this.isTablet) { return "18vw" }
+      else if (this.isPc) { return "18vw" }
+    },
+    entryPointBorderWidth: function() {
+      if (this.isMobile) { return "3vw" }
+      else if (this.isTablet) { return "3vw" }
+      else if (this.isPc) { return "3vw" }
+    },
+    entryPointBorderWidthHover: function() {
+      if (this.isMobile) { return "1vw" }
+      else if (this.isTablet) { return "1vw" }
+      else if (this.isPc) { return "1vw" }
     }
   },
   mounted: function() {
