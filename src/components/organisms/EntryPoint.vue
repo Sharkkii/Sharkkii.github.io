@@ -40,9 +40,9 @@
 
   .entry-point-item {
     box-sizing: border-box;
-    height: calc(v-bind(height) - 2 * v-bind(border-width));
-    padding: 10px;
-    width: calc(v-bind(width) - 2 * v-bind(border-width));
+    height: calc(v-bind(height) - 2 * v-bind(borderWidth));
+    padding: 1vw;
+    width: calc(v-bind(width) - 2 * v-bind(borderWidth));
   }
 
 }

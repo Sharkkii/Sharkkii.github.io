@@ -36,7 +36,7 @@
       <entry-point link="research" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
-            <div class="flex-item image">
+            <div class="flex-item icon">
               <fa icon="graduation-cap"></fa>
             </div>
             <div class="flex-item text" v-if="isPc || isTablet">
@@ -64,7 +64,7 @@
       <entry-point link="development" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
-            <div class="flex-item image">
+            <div class="flex-item icon">
               <fa icon="laptop-code"></fa>
             </div>
             <div class="flex-item text" v-if="isTablet || isPc">
@@ -72,7 +72,6 @@
               <div class="paragraph">
                 <ul>
                   <li><p>shaRL: Reinforcement Learning Framework</p></li>
-                  <li><p>shaDL: Deep Learning Framework</p></li>
                   <li><p>Enshu3: 1-month Research Projects</p></li>
                   <li><p>Aiproject: AI-powered Task Manager</p></li>
                 </ul>
@@ -92,7 +91,7 @@
       <entry-point link="career" v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover">
         <template v-slot:content>
           <div class="flex-container">
-            <div class="flex-item image">
+            <div class="flex-item icon">
               <fa icon="briefcase"></fa>
             </div>
             <div class="flex-item text" v-if="isTablet || isPc">
@@ -118,7 +117,7 @@
       <entry-point link="not-found" disabled v-bind:width="entryPointWidth" v-bind:height="entryPointHeight" v-bind:borderWidth="entryPointBorderWidth" v-bind:borderWidthHover="entryPointBorderWidthHover" v-for="n in 2" v-bind:key="n">
         <template v-slot:content>
           <div class="flex-container">
-            <div class="flex-item image">
+            <div class="flex-item icon">
               <fa icon="spinner"></fa>
             </div>
             <div class="flex-item text" v-if="isTablet || isPc">
@@ -140,16 +139,16 @@
 </template>
 
 <style lang="scss" scoped>
-$border-width: 3vw;
-$outer-content-height: 12vw;
-$outer-container-height: calc(#{$outer-content-height} + 2 * #{$border-width});
-$outer-content-width: 48vw;
-$outer-container-width: calc(#{$outer-content-width} + 2 * #{$border-width});
+$outer-height: v-bind(entryPointHeight);
+$outer-width: v-bind(entryPointWidth);
+$border-width: v-bind(entryPointBorderWidth);
+$inner-height: calc(#{$outer-height} - 2 * #{$border-width});
+$inner-width: calc(#{$outer-width} - 2 * #{$border-width});
 
-$image-height: 9vw;
-$image-width: 9vw;
-$text-height: 9vw;
-$text-width: 27vw;
+$image-height: calc(#{$inner-height} * 0.75);
+$icon-height: calc(#{$inner-height} * 0.55);
+$text-height: calc(#{$inner-height} * 0.75);
+$text-width: calc(#{$inner-width} * 0.55);
 
 #index-page {
 
@@ -157,8 +156,10 @@ $text-width: 27vw;
 
     margin: 5vw auto;
     
-    transition-property: opacity;
-    transition-duration: 1s;
+    img {
+      transition-property: opacity;
+      transition-duration: 1s;
+    }
     &:hover {
       img {
         opacity: 0.5;
@@ -179,28 +180,30 @@ $text-width: 27vw;
     width: 100%;
   }
 
-  .image {
+  .flex-item.image {
 
-    height: $image-height;
-    width: $image-width;
-      
-    // for font-awesome icon
-    font-size: $image-height;
-    line-height: $image-height;
-    text-align: center;
+    height: 100%;
+    aspect-ratio: 1/1;
 
     // for PNG image
     img {
-      height: $image-height;
-      aspect-ratio: 1;
-      opacity: 1.0;
-      transition-property: opacity;
-      transition-duration: 1s;
+      height: 100%;
+      aspect-ratio: 1/1;
     }
 
   }
 
-  .text {
+  .flex-item.icon {
+
+    height: $icon-height;
+    aspect-ratio: 1/1;
+    font-size: $icon-height;
+    line-height: $icon-height;
+    text-align: center;
+
+  }
+
+  .flex-item.text {
 
     box-sizing: border-box;
     height: $text-height;
@@ -247,13 +250,16 @@ export default {
   },
   computed: {
     entryPointWidth: function() {
+      // 54 = 48 + 3 * 2
       if (this.isMobile) { return "54vw" }
       else if (this.isTablet) { return "54vw" }
       else if (this.isPc) { return "54vw" }
     },
     entryPointHeight: function() {
+      // 18 = 12 + 3 * 2
+      // 30 = 24 + 3 * 2
       if (this.isMobile) { return "18vw" }
-      else if (this.isTablet) { return "18vw" }
+      else if (this.isTablet) { return "24vw" }
       else if (this.isPc) { return "18vw" }
     },
     entryPointBorderWidth: function() {

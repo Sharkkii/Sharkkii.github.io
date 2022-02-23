@@ -4,7 +4,7 @@
 
     <side-navigation-list-item class="flex-item" v-bind:link="'/'">
       <template v-slot:side-navigation-list-item>
-        <logo/>
+        <sharkkii-icon v-bind:hasText="isTablet || isPc"/>
       </template>
     </side-navigation-list-item>
 
@@ -39,10 +39,6 @@
 <style lang="scss" scoped>
 #the-side-navigation-list {
 
-  $logo-height: $side-navigation-item-height;
-  $logo-width: $side-navigation-item-width;
-  @include LogoSize($width:$logo-width, $height:$logo-height, $font-size:$fontsize-xlarge);
-
   height: $side-navigation-height;
   width: $side-navigation-width;
   
@@ -68,11 +64,10 @@ import CareerIcon from "@/components/atoms/icons/CareerIcon.vue"
 import AboutMeIcon from "@/components/atoms/icons/AboutMeIcon.vue"
 import InternalLink from "../../atoms/InternalLink"
 import SideNavigationListItem from "../../atoms/navigations/SideNavigationListItem"
-import Logo from "../Logo"
 export default {
   name: "the-side-navigation-list",
   components: {
-    InternalLink, SideNavigationListItem, SharkkiiIcon, ResearchIcon, DevelopmentIcon, CareerIcon, AboutMeIcon, Logo
+    InternalLink, SideNavigationListItem, SharkkiiIcon, ResearchIcon, DevelopmentIcon, CareerIcon, AboutMeIcon
   }
 }
 </script>

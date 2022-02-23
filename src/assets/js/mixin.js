@@ -24,9 +24,9 @@ let MediaQueryMixin = {
       return (breakpoint.max <= this.screenWidth)
     },
     media: function() {
-      if (isMobile) { return "mobile" }
-      else if (isTablet) { return "tablet" }
-      else if (isPc) { return "pc" }
+      if (this.isMobile) { return "mobile" }
+      else if (this.isTablet) { return "tablet" }
+      else if (this.isPc) { return "pc" }
       else { return "" }
     }
   },
