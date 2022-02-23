@@ -145,6 +145,9 @@
 
   .main-item {
 
+    min-height: 20vh;
+    border-left: solid 0.1vw $main-color;
+    border-right: solid 4vw $main-color;
     color: $main-color;
 
     .headline {
@@ -155,8 +158,8 @@
     transition-duration: 1s, 1s, 1s;
 
     &:hover {
-      border-left: solid 20px $main-color-20;
-      border-right: solid 1px $main-color-20;
+      border-left: solid 4vw $main-color-20;
+      border-right: solid 0.1vw $main-color-20;
       color: $main-color-20;
     }
 
