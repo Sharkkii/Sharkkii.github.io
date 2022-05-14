@@ -18,7 +18,9 @@
               <div class="paragraph">
                 <p>Toshiki Kodera / Sharkkii</p>
                 <ul>
-                  <li><p>M1 Student @ UTokyo (Sugiyama-Yokoya-Ishida Lab.)</p></li>
+                  <li>
+                    <p>M2 Student @ UTokyo (Sugiyama-Yokoya-Ishida Lab.)</p>
+                  </li>
                 </ul>
               </div>
             </div>

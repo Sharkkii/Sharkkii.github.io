@@ -32,6 +32,10 @@
       </template>
     </side-navigation-list-item>
 
+    <div class="flex-item social-icon">
+      <the-social-icon v-bind:width="sideNavigationItemWidth" v-bind:height="sideNavigationItemHeight" />
+    </div>
+
   </div>
 </div>
 </template>
@@ -45,12 +49,17 @@
   .flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
   }
 
   .flex-item {
     height: $side-navigation-item-height;
     width: 100%;
+  }
+
+  .social-icon {
+    margin-top: auto;
   }
 
 }
@@ -64,10 +73,21 @@ import CareerIcon from "@/components/atoms/icons/CareerIcon.vue"
 import AboutMeIcon from "@/components/atoms/icons/AboutMeIcon.vue"
 import InternalLink from "../../atoms/InternalLink"
 import SideNavigationListItem from "../../atoms/navigations/SideNavigationListItem"
+import TheSocialIcon from '@/components/molecules/TheSocialIcon.vue'
+import { sideNavigationItemWidth, sideNavigationItemHeight } from "@/assets/js/resources.js"
 export default {
   name: "the-side-navigation-list",
   components: {
-    InternalLink, SideNavigationListItem, SharkkiiIcon, ResearchIcon, DevelopmentIcon, CareerIcon, AboutMeIcon
+    InternalLink, SideNavigationListItem, SharkkiiIcon, ResearchIcon, DevelopmentIcon, CareerIcon, AboutMeIcon, TheSocialIcon
+  },
+  computed: {
+    sideNavigationItemWidth: function() {
+      return sideNavigationItemWidth(this.screenWidth);
+    },
+    sideNavigationItemHeight: function() {
+      return sideNavigationItemHeight(this.screenHeight);
+    }
   }
 }
 </script>
+    TheSocialIcon

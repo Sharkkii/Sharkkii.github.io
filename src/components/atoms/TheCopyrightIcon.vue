@@ -1,7 +1,7 @@
 <template>
 <div id="copyright-icon">
   <fa icon="copyright"></fa>
-  <span>2021 SHARKKII</span>
+  <span>2022 SHARKKII</span>
 </div>
 </template>
 

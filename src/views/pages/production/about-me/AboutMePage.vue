@@ -25,10 +25,29 @@
             <p class="headline">Affiliation</p>
             <ul class="paragraph">
               <li>
-                <p>1st-year Master Student @
+                <p>2nd-year Master Student @ Dept. of CS, Graduate School of IST, UTokyo
+                </p>
+                <p>
+                  --
+                  <external-link link="https://www.is.s.u-tokyo.ac.jp/" class="display-inline color-main">
+                    <template v-slot:link>
+                      CS (Computer Science)
+                    </template>
+                  </external-link>
+                </p>
+                <p>
+                  --
                   <external-link link="https://www.i.u-tokyo.ac.jp/" class="display-inline color-main">
                     <template v-slot:link>
-                      Dept. of Computer Science, Graduate School of Information Science and Technology, The University of Tokyo
+                      IST (Information Science and Technology)  
+                    </template>
+                  </external-link>
+                </p>
+                <p>
+                  --
+                  <external-link link="https://www.u-tokyo.ac.jp/ja/index.html" class="display-inline color-main">
+                    <template v-slot:link>
+                      UTokyo (the University of Tokyo)
                     </template>
                   </external-link>
                 </p>
@@ -49,11 +68,11 @@
             <ul class="paragraph">
               <li>
                 <p>April 2021 - <span class="fontweight-bold">present</span></p>
-                <p>the Dept. of Computer Science, the University of Tokyo</p>
+                <p>Dept. of Computer Science, the University of Tokyo</p>
               </li>
               <li>
                 <p>April 2019 - March 2021</p>
-                <p>the Dept. of Information Science, the University of Tokyo</p>
+                <p>Dept. of Information Science, the University of Tokyo</p>
               </li>
               <li>
                 <p>April 2017 - March 2019</p>
@@ -88,6 +107,14 @@
                     </template>
                   </external-link>
                 </p>
+                <p>
+                  --
+                  <external-link link="https://tech.preferred.jp/ja/blog/education-playgram-ai-chapter/" class="display-inline color-main">
+                    <template v-slot:link>
+                      PFN Blog: "Programming-education from Scratch: Development of AI Teaching-materials @ Playgram"
+                    </template>
+                  </external-link>
+                </p>
               </li>
               <li>
                 <p>April 2020 - March 2022</p>
@@ -104,12 +131,6 @@
                   <external-link link="https://gci.t.u-tokyo.ac.jp/gci-2020-summer/" class="display-inline color-main">
                     <template v-slot:link>
                       2020 Summer
-                    </template>
-                  </external-link>
-                  /
-                  <external-link link="https://gci.t.u-tokyo.ac.jp/gci-2020-winter/" class="display-inline color-main">
-                    <template v-slot:link>
-                      2020 Winter
                     </template>
                   </external-link>
                   /
@@ -163,14 +184,25 @@
               </li>
             </ul>
           </div>
-          <div class="main-item github">
-            <p class="headline">GitHub Account</p>
+          <div class="main-item account">
+            <p class="headline">Account</p>
             <ul class="paragraph">
               <li>
                 <p>
+                  GitHub Account:
                   <external-link link="https://github.com/Sharkkii" class="display-inline color-main">
                     <template v-slot:link>
                       Sharkkii
+                    </template>
+                  </external-link>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Twitter Account:
+                  <external-link link="https://twitter.com/Toshiki_Kodera" class="display-inline color-main">
+                    <template v-slot:link>
+                      Toshiki Kodera (@Toshiki_Kodera)
                     </template>
                   </external-link>
                 </p>
