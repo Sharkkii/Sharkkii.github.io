@@ -57,13 +57,14 @@
             <ul class="paragraph">
               <li>
                 <p>
-                  My blog will be published on
-                  <external-link link="https://tech.preferred.jp/ja/blog/" class="display-inline color-main">
+                  My blog has been published:
+                </p>
+                <p>
+                  <external-link link="https://tech.preferred.jp/ja/blog/education-playgram-ai-chapter/" class="display-inline color-main">
                     <template v-slot:link>
-                      PFN blog
+                      PFN Blog: "Programming-education from Scratch: Development of AI Teaching-materials @ Playgram"
                     </template>
                   </external-link>
-                  sooner or after...
                 </p>
               </li>
             </ul>
@@ -93,7 +94,7 @@
             <ul class="paragraph">
               <li>
                 <p>
-                  Chair for Global Consumer Intelligence (GCI) is a course provided by
+                  Chair for Global Consumer Intelligence (GCI) is a data science course provided by
                   <external-link link="https://weblab.t.u-tokyo.ac.jp/" class="display-inline color-main">
                     <template v-slot:link>
                       Matsuo lab.
@@ -101,22 +102,27 @@
                   </external-link>
                   at the University of Tokyo.
                 </p>
+                <p>
+                  More details -> 
+                  <external-link link="https://gci.t.u-tokyo.ac.jp/" class="display-inline color-main">
+                    <template v-slot:link>
+                      Global Consumer Intelligence (GCI)
+                    </template>
+                  </external-link>
+                </p>
               </li>
               <li>
                 <p>
-                  I have given lectures 4 times on data science (2 times on machine learning, 2 times on Python or its libraries commonly used in data analysis).
+                  I have given 3 lectures on data science (DS) & machine learning (ML).
+                </p>
+                <p>
+                  (2 lectures on the basics of ML, 1 lecture on Python language commonly used in DS & ML)
                 </p>
                 <p>
                   -> More details:
                   <external-link link="https://gci.t.u-tokyo.ac.jp/gci-2020-summer/" class="display-inline color-main">
                     <template v-slot:link>
                       2020 Summer
-                    </template>
-                  </external-link>
-                  /
-                  <external-link link="https://gci.t.u-tokyo.ac.jp/gci-2020-winter/" class="display-inline color-main">
-                    <template v-slot:link>
-                      2020 Winter
                     </template>
                   </external-link>
                   /
